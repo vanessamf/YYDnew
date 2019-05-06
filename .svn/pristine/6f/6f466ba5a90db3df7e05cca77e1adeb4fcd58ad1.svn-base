@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<div>
+			<h2>YYDnew</h2>
+			<ul>
+				<li>
+					<a href="./page/login.html" target="_blank">登录</a>
+				</li>
+				<li>
+					<a href="./page/tableList.html" target="_blank">桌台</a>
+				</li>
+				<li>
+					<a href="./page/menu.html" target="_blank">点餐</a>
+				</li>
+				<li>
+					<a href="./page/payment.html" target="_blank">付款</a>
+				</li>
+				<li>
+					<a href="./page/waimai.html" target="_blank">外接单</a>
+				</li>
+				<li>
+					<a href="./page/orderInfo.html" target="_blank">已结账单</a>
+				</li>
+				<li>
+					<a href="./page/booking.html" target="_blank">预定</a>
+				</li>
+				<li>
+					<a href="./page/shanghuSetting.html" target="_blank">系统设置</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

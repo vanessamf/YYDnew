@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>外接单</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-switch.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/menu.css" />-->
+		<!--<link rel="stylesheet" href="../css/waimai.css" />-->
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="javascript:void(0);" class="back col-xs-2 no-padding" onclick="javascript:history.back(-1);">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div class="status-wrapper">
+				<span class="">营业状态：</span>
+				<input name="status" type="checkbox" checked="checked">
+				<span class="">自动接单：</span>
+				<input name="auto" type="checkbox" data-size="large">
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="main-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="waimai-left col-md-5 col-sm-5 col-lg-5 no-padding">
+				<!--<div class="order-header">
+					<span>桌：一品桂圆羹</span>
+					<span>人数：3</span>
+					<span>总额：101.00</span>
+					<span>5项</span>
+				</div>-->
+				<div class="search-wrapper">
+					<div class="search-bar">
+						<div class="search-int">
+							<input type="search" placeholder="&#xe60f; 订单号查找">
+						</div>
+					</div>
+					<div class="waimai-curdate">
+						<input class="order-date form-control" type="text" value="2018-09-08" readonly="readonly">
+						<i class="iconfont icon-icon_arrow_down"></i>
+					</div>
+					<div class="waimai-refresh">
+						<i class="iconfont icon-f14"></i> 刷新
+					</div>
+				</div>
+				<div class="wm-order-tab">
+					<ul class="nav nav-pills clearfloat">
+						<li class="tab-nav active">
+							<a href="#newOrder" data-toggle="tab">新订单</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#all2" data-toggle="tab">已结单</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#all3" data-toggle="tab">异常订单</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content wm-order-content">
+					<div id="newOrder" class="tab-pane active wm-order-list clearfloat">
+						<div class="wm-order-title">
+							<span class="col-xs-3 col-sm-3">订单编号</span>
+							<span class="col-xs-2 col-xs-2 col-sm-2">平台来源</span>
+							<span class="col-xs-4 col-sm-4">交易时间</span>
+							<span class="col-xs-3 col-sm-3">订单状态</span>
+						</div>
+						<ul>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item ">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+
+							<li class="ol-item  ">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+
+							<li class="ol-item  ">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单1</span>
+							</li>
+						</ul>
+					</div>
+					<div id="all2" class="tab-pane wm-order-list clearfloat">
+						<div class="wm-order-title">
+							<span class="col-xs-3 col-sm-3">订单编号</span>
+							<span class="col-xs-2 col-sm-2">平台来源</span>
+							<span class="col-xs-4 col-sm-4">交易时间</span>
+							<span class="col-xs-3 col-sm-3">订单状态</span>
+						</div>
+						<ul>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单1</span>
+							</li>
+						</ul>
+					</div>
+					<div id="all3" class="tab-pane  wm-order-list clearfloat">
+						<div class="wm-order-title">
+							<span class="col-xs-3 col-sm-3">订单编号</span>
+							<span class="col-xs-2 col-xs-2 col-sm-2">平台来源</span>
+							<span class="col-xs-4 col-sm-4">交易时间</span>
+							<span class="col-xs-3 col-sm-3">订单状态</span>
+						</div>
+						<ul>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item ">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+
+							<li class="ol-item  ">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+
+							<li class="ol-item  ">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3 badge-content">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单</span>
+							</li>
+
+							<li class="ol-item">
+								<span class="col-xs-3 col-sm-3">121323</span>
+								<span class="col-xs-2 col-sm-2">微信</span>
+								<span class="col-xs-4 col-sm-4">06-07-11:30</span>
+								<span class="col-xs-3 col-sm-3">已接单1</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--左边END-->
+
+			<!--右边-->
+			<div class="waimai-right col-md-7 col-sm-7 col-lg-7 no-padding">
+				<div class="order-detail-title">
+					<sapn>编号：123456</sapn>
+					<span>平台：微信支付</span>
+					<span>订单金额：287.00</span>
+					<span>单号：1113</span>
+				</div>
+				<div class="order-detail">
+					<div class="order-detail-remark">备注：清淡，不要香菜！</div>
+					<div class="order-detail-dish">
+						<ul>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+									番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4">12.00</span>
+								<span class="col-sm-2">X2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 pl5">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 pl10">油炸</span>
+									<span class="col-sm-2">10.00</span>
+								</li>
+							</ul>
+						</li>
+						
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4">88.00</span>
+								<span class="col-sm-2">X2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 pl5">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 pl10">油炸</span>
+									<span class="col-sm-2">30.00</span>
+								</li>
+							</ul>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4">900.00</span>
+								<span class="col-sm-2">X20</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 pl5">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 pl10">油炸</span>
+									<span class="col-sm-2">70.00</span>
+								</li>
+							</ul>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4">23.00</span>
+								<span class="col-sm-2">X2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 pl5">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 pl10">油炸</span>
+									<span class="col-sm-2">90.00</span>
+								</li>
+							</ul>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4">90.00</span>
+								<span class="col-sm-2">X2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 pl5">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 pl10">油炸</span>
+									<span class="col-sm-2">10.00</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+						<div class="navigation">
+							<i class="iconfont icon-shangyiye5"></i>
+							<span class="dish-number">1</span>
+							<i class="iconfont icon-xiayiye6"></i>
+						</div>
+					</div>
+					<div class="order-detail-mail">
+						<span>2018-08-29&nbsp;&nbsp;12:30</span>
+						<span class="">自提</span>
+						<span>骑手：小乐乐&nbsp;&nbsp;15372196513</span>
+						<!--<span></span>-->
+					</div>
+					<div class="order-detail-address">
+						<p>配送信息</p>
+						<div class="address-wrapper">
+							<p>收货地址：</p>
+							<div class="address-info">
+								<p>
+									<span>张女士</span>
+									<span>150****5269</span>
+								</p>
+								<p>
+									苏州市兴吴路105号9幢
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="order-detail-operation">
+						<span>拒单</span>
+						<span>接单</span>
+						<span>打印</span>
+						<span>结单</span>
+					</div>
+				</div>
+			</div>
+			<!--右边END-->
+			<div class="btn-over-all">
+				全部<br/>结单
+			</div>
+		</div>
+		<footer id="footer"class="footer">
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			// 		$(".btn-warning").click(function(){
+			// 			window.location.href="payment.html";
+			// 		})
+		})
+
+		//滚动条宽度
+		$(document).on('click', '.wm-order-tab .tab-nav', function(e) {
+			var index = $(this).index();
+			scrollWidth(index);
+		})
+			window.onresize = function() {
+				scrollWidth(0);
+			}
+			window.onload = function() {
+				scrollWidth(0);
+			}
+		
+
+		function scrollWidth(i) {
+			var sw = $(".wm-order-list>ul")[i].offsetWidth - $(".wm-order-list>ul")[i].scrollWidth;
+			var tsw = $(".wm-order-list>ul")[i].scrollWidth;
+			$(".wm-order-title").eq(i).css({
+				"width": tsw
+			})
+		}
+
+		$('[name="status"]').bootstrapSwitch({
+			onText: "开",
+			offText: "关",
+			onColor: "info",
+			offColor: "info",
+			size: "large",
+			//			animate:false,
+			onSwitchChange: function(event, state) {
+				if(state == true) {
+					$(this).val("1");
+				} else {
+					$(this).val("2");
+				}
+			}
+		});
+		$('[name="auto"]').bootstrapSwitch({
+			onText: "开",
+			offText: "关",
+			onColor: "info",
+			offColor: "info",
+			size: "mini",
+			onSwitchChange: function(event, state) {
+				if(state == true) {
+					$(this).val("1");
+				} else {
+					$(this).val("2");
+				}
+			}
+		})
+		$(".order-date").datetimepicker({
+			language: "zh-CN",
+			format: 'yyyy-mm-dd',
+			autoclose: true,
+			minView: 2,
+			pickerPosition:"bottom-left"
+			//			bootcssVer:3
+		});
+		var currentDate=new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate();
+       $('input.order-date').val(currentDate);
+	</script>
+
+</html>

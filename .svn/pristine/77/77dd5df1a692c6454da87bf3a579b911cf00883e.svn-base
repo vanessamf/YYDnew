@@ -1,0 +1,570 @@
+.system-wrapper {
+	position: relative;
+	/*padding: 7px 0 0 0;*/
+	height: calc(100% - 85px);
+	font-size: 16px;
+}
+
+
+/*左边*/
+
+.system-left {
+	height: 100%;
+	background: #7aa9b1;
+	color: #fff;
+	overflow-y: auto;
+}
+
+.system-left .left-menu li {
+	display: flex;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	overflow: hidden;
+	/*white-space: nowrap;
+	text-overflow: ellipsis;*/
+}
+
+.system-left .left-menu li.active,
+.system-left .left-menu li:active {
+	background: #7eb3bb;
+}
+
+.system-left .left-menu li i {
+	margin-right: 10px;
+	font-size: 22px;
+}
+
+
+/*右边*/
+
+.system-right {
+	height: 100%;
+	padding: 15px;
+}
+
+.system-right .right-content {
+	height: 100%;
+	background: #fff;
+	box-shadow: 0px 1px 6px 2px #c9c6c6;
+}
+
+
+/*商户信息*/
+
+.system-right .right-content .shanghu-content li {
+	display: flex;
+	justify-content: space-between;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
+}
+
+.system-right .right-content .shanghu-content li:nth-child(odd) {
+	background: #e7f5f6;
+}
+
+
+/*打印设置*/
+
+.system-right .right-content .print-content {
+	height: 100%;
+	padding: 30px;
+}
+
+.system-right .right-content .print-content .rows {
+	height: auto;
+}
+
+.system-right .right-content .print-content .row-item {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	/*height: 50px;
+	line-height: 50px;*/
+}
+
+.system-right .right-content .print-content .row-item .input-group {
+	height: 30px;
+}
+
+.system-right .right-content .print-content .row-item .sm-input {
+	width: 30px;
+	height: 30px;
+	padding: 0 10px;
+}
+
+.system-right .right-content .print-content .row-item .btn {
+	background: #e5e5e5;
+}
+
+.system-right .right-content .print-content .row-item .btn-sm {
+	height: 30px;
+	margin-left: 15px;
+	font-size: 14px;
+	background: #e5e5e5;
+}
+
+.system-right .right-content .print-content .row-item .input-group-addon {
+	float: left;
+	width: 30px;
+	padding: 6px 10px;
+	height: 30px;
+}
+
+.system-right .right-content .print-content .btn-light-grey {
+	background: #e5e5e5;
+}
+
+.system-right .right-content .print-content .btn-sm.btn-light-green,
+.system-right .right-content .print-content .btn.btn-light-green {
+	color: #fff;
+	background: #53d8d3;
+}
+
+.system-right .right-content .print-content .btn-sm:active,
+.system-right .right-content .print-content .btn:active {
+	color: #fff;
+	background: #53d8d3;
+}
+
+.system-right .right-content .print-content .print-type {
+	display: flex;
+	padding: 10px 0;
+}
+
+.system-right .right-content .print-content .print-type .type-content {
+	width: 100%;
+	flex: 1;
+}
+
+.system-right .right-content .print-content .print-type .type-content .type-tab ul li a {
+	height: 30px;
+	line-height: 1;
+	margin-right: 25px;
+	font-size: 14px;
+	color: #000;
+	background: #e5e5e5;
+}
+
+.system-right .right-content .print-content .print-type .type-content .type-tab ul li.active a,
+.system-right .right-content .print-content .print-type .type-content .type-tab ul li a:active {
+	color: #fff;
+	background: #53d8d3;
+}
+
+.type-content .tab-content {
+	margin-top: 20px;
+}
+
+.type-content .tab-content .tab-pane {
+	height: 30px;
+	line-height: 30px;
+}
+
+.type-content .tab-content .tab-pane .form-control {
+	height: 30px;
+}
+
+
+/*厨房监控*/
+
+.system-right .right-content .monitoring-content {
+	height: 100%;
+	padding: 15px;
+}
+
+.monitoring-content .checkbox {
+	margin: 0 0 20px;
+}
+
+.monitoring-content .content-wrapper {
+	height: calc(100% - 42px);
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-between;*/
+}
+
+.monitoring-content .print-bar {
+	margin-bottom: 20px;
+}
+
+.monitoring-content .print-bar li a {
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	padding: 0;
+	color: #000;
+	background: #eee;
+	border-radius: 0;
+}
+
+.monitoring-content .print-bar li.active a,
+.monitoring-content .print-bar li:active a {
+	color: #fff;
+	background: #53d8d3;
+}
+
+.monitoring-content .tab-content {
+	text-align: center;
+	/*flex:1;*/
+	height: calc(100% - 105px);
+	/*overflow-y: auto;*/
+}
+
+.monitoring-content .tab-content .tab-pane {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.monitoring-content .tab-content .tab-pane .table {
+	/*height:300px;*/
+	/*overflow-y: auto;*/
+	/*table-layout: fixed; 
+	word-break: break-all;*/
+}
+
+.monitoring-content .monitoring-title {
+	height: 40px;
+	line-height: 40px;
+	/*display: flex;
+	justify-content: space-between;*/
+}
+
+.monitoring-content .monitoring-list-wrapper{
+	height: calc(100% - 60px);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.monitoring-content .monitoring-list {
+	overflow-y: auto;
+	height: calc(100% - 80px);
+}
+
+.monitoring-content .monitoring-item:nth-child(odd) {
+	background: #e7f5f6;
+}
+
+.monitoring-content .content-wrapper .bottom-btn {
+	text-align: center;
+}
+
+.monitoring-content .content-wrapper .bottom-btn span {
+	display: inline-block;
+	padding: 0 15px;
+	margin-left: 15px;
+	height: 48px;
+	line-height: 48px;
+	background: #eee;
+	border-radius: 5px;
+}
+
+
+/*功能设置*/
+
+.func-content {
+	height: 100%;
+	padding: 20px;
+}
+
+.func-content .func-row {
+	display: flex;
+	align-items: center;
+	/*height:auto;*/
+	background: #eee;
+	border: 1px solid #d2d2d2;
+	border-bottom: none;
+}
+
+.func-content .func-row:last-child {
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.func-content .func-row .title {
+	/*height:100%;*/
+	text-align: center;
+	padding: 15px 0;
+}
+
+.func-content .func-row .content {
+	padding: 15px 0 0 0;
+	background: #fff;
+}
+
+.func-content .func-row .func-item {
+	margin-bottom: 15px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.func-content .func-row .func-item:last-child {
+	/*margin-bottom: 0;*/
+}
+
+.func-content .func-row .func-item select {
+	height: 30px;
+}
+
+.right-content .btn-num {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+	margin-right: 15px;
+	text-align: center;
+	background: #eee;
+}
+
+.right-content .btn-num.active,
+.right-content .btn-num:active {
+	color: #fff;
+	background: #52d9d2;
+}
+
+.func-content .func-row .btn.active {
+	color: #fff;
+	background: #52d9d2;
+}
+
+
+/*账户管理*/
+
+.system-right .right-content .account-wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow-y: auto;
+}
+
+.system-right .right-content .account-content li {
+	/*display: flex;
+	justify-content: space-between;*/
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
+}
+
+.system-right .right-content .account-content li:nth-child(odd) {
+	background: #e7f5f6;
+}
+
+.system-right .right-content .account-wrapper .account-bottom {
+	text-align: center;
+}
+
+.system-right .right-content .account-wrapper .account-bottom .button {
+	margin: 0 auto;
+	width: 120px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+	background: #eee;
+	border-radius: 5px;
+}
+
+.system-right .right-content .account-wrapper .account-bottom .button:active {
+	color: #fff;
+	background: #51d8d4;
+}
+
+.system-right .right-content .account-wrapper .account-bottom .tips {
+	color: #d85050;
+	margin: 25px 0 20px;
+}
+
+
+/*外屏设置*/
+
+.outerScreen-content {
+	height: 100%;
+	padding: 15px;
+}
+
+.outerScreen-content .outerScreen-item {
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+.outerScreen-content .outerScreen-item .btn.active {
+	color: #fff;
+	background: #51d8d4;
+}
+
+.outerScreen-content .outerScreen-item select {
+	height: 30px;
+}
+
+.outerScreen-content .outerScreen-item label {
+	margin: 0;
+}
+
+label.radio-inline {
+	padding: 0 40px;
+	line-height: 30px;
+}
+
+.radio .radio-inline input[type=radio] {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.outerScreen-content .add-btn {
+	margin-bottom: 15px;
+}
+
+.outerScreen-content .button {
+	width: 65px;
+	height: 35px;
+	float: right;
+	border: none;
+	color: #fff;
+	background: #51d8d4;
+}
+
+.outerScreen-content .ad-content .ad-title {
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	background: #eee;
+}
+
+.outerScreen-content .ad-content .ad-item {
+	text-align: center;
+}
+
+
+/*消息中心*/
+
+.msg-content {
+	height: 100%;
+}
+
+.msg-content .msg-title {
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background: #e7f5f6;
+}
+
+.msg-content .msg-list {
+	height: calc(100% - 45px);
+	overflow-y: auto;
+}
+
+.msg-content .msg-list .msg-item {
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.msg-content .msg-list .msg-item:nth-child(even) {
+	background: #e7f5f6;
+}
+
+
+/*修改密码*/
+
+.pwd-content {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pwd-content form {
+	width: 80%;
+}
+
+.pwd-content form .inputOuter {
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 25px;
+}
+
+.pwd-content form .inputOuter input {
+	height: 35px;
+	width: 80%;
+	float: right;
+	padding: 0 15px;
+	background: #eee;
+	border: none;
+}
+
+.pwd-content form .submit {
+	text-align: center;
+}
+
+.pwd-content form .submit input {
+	width: 100px;
+	height: 50px;
+	color: #fff;
+	background: #53d8d3;
+}
+
+
+/*更多功能*/
+
+.more-wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.system-right .right-content .more-content li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
+}
+
+.system-right .right-content .more-content li:nth-child(odd) {
+	background: #e7f5f6;
+}
+
+.more-wrapper .more-bottom {
+	padding: 20px;
+}
+
+.more-wrapper .more-bottom .checkbox {
+	height: 30px;
+	line-height: 30px;
+}
+
+.more-wrapper .more-bottom .checkbox input {
+	margin-top: 7px;
+}
+
+.more-wrapper .more-bottom .mb-list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.more-wrapper .more-bottom .mb-list .mb-item {
+	width: 30%;
+	height: 30px;
+	line-height: 30px;
+	display: flex;
+}
+
+.more-wrapper .more-bottom .mb-list label {
+	/*width:*/
+	/*flex:1;*/
+}
+
+.more-wrapper .more-bottom .mb-item>div {
+	flex: 1;
+}
+
+.more-wrapper .more-bottom .mb-item>div select {
+	height: 30px;
+	padding: 0 10px;
+	border-radius: 0;
+}

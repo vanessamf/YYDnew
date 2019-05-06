@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>分单</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/menu.css" />
+		<link rel="stylesheet" href="../css/separateBills.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="tableList.html" class="back col-xs-1 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				（沁园春）分单
+			</div>
+			<span class="btn-exit">
+					<!--<i class="iconfont icon-shanjian01 large text-white"></i>-->
+			</span>
+		</header>
+		<div class="check-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<div class="separateBills-wrapper col-sm-12 no-padding clearfloat">
+					<div class="col-sm-4  no-padding bills-column">
+						<div class="column-title">单号：04002</div>
+						<div class="column-content">
+							<ul class="dish-list">
+								<li class="radio">
+									<label>
+											<input type="radio" class="qx"> 
+											<span class="col-sm-3">1001</span>
+											<span class="col-sm-6">蒸菜系列afsfds做法</span>
+											<span class="col-sm-3">10</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="column-footer">总价：30.00</div>
+					</div>
+					<div class="col-sm-4 bills-column"></div>
+					<div class="col-sm-4 bills-column"></div>
+				</div>
+				<div class="separateBills-footer col-sm-12 no-padding clearfloat">
+					<span class="col-sm-1-5">新建</span>
+					<span class="col-sm-1-5">保存</span>
+					<span class="col-sm-1-5">一键分单</span>
+					<span class="col-sm-1-5">取消</span>
+					<span class="col-sm-1-5">账单列表</span>
+				</div>
+		</div>
+		<footer class="footer">
+			<div class="col-md-3 col-sm-4 col-xs-4">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="col-md-4 col-sm-5 col-xs-5">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+		<!--弹窗-->
+		<!--确认反结算-->
+<div class="modal fade" id="overringModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">确认反结算？</h4>
+			</div>
+			<div class="modal-body  clearfloat">
+				<div class="overring-container">
+					<span class="reason-btn active">支付问题？<i class="iconfont icon-gou"></i></span>
+					<span class="reason-btn">菜品问题？</span>
+					<span class="reason-btn">其它问题？</span>
+					<li class="reason-btn itemempty"></li>
+					<li class="reason-btn itemempty"></li>
+				</div>
+			</div>
+			<div class="modal-footer no-border">
+				<button type="button" class="btn " >确定</button>
+				<button type="button" class="btn "data-dismiss="modal">退出</button>
+			</div>
+		</div>
+	</div>
+</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".btn-warning").click(function() {
+				window.location.href = "payment.html";
+			})
+		})
+	</script>
+<script type="text/javascript">
+	$(".overring-container .reason-btn").on("click", function() {
+		if(!$(this).hasClass("active")) {
+			$(this).siblings(".reason-btn").removeClass("active");
+			$(this).siblings(".reason-btn").children("i").remove();
+			$(this).addClass("active");
+			var html = '<i class="iconfont icon-gou"></i>';
+			$(this).append(html);
+		}
+	})
+</script>
+</html>

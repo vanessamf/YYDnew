@@ -1,0 +1,92 @@
+.system-wrapper {
+	position: relative;
+	/*padding: 7px 0 0 0;*/
+	height: calc(100% - 85px);
+	font-size: 16px;
+}
+
+
+/*左边*/
+
+.system-left {
+	height: 100%;
+	background: #7aa9b1;
+	color: #fff;
+}
+
+.system-left .left-menu li {
+	display: flex;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	overflow: hidden;
+	/*white-space: nowrap;
+	text-overflow: ellipsis;*/
+}
+
+.system-left .left-menu li.active,
+.system-left .left-menu li:active {
+	background: #7eb3bb;
+}
+
+.system-left .left-menu li i {
+	margin-right: 10px;
+	font-size: 22px;
+}
+
+
+/*右边*/
+
+.system-right {
+	height: 100%;
+	padding: 15px;
+}
+.system-right .right-content {
+	height: 100%;
+	background: #fff;
+	box-shadow: 0px 1px 6px 2px #c9c6c6;
+}
+/*商户信息*/
+.system-right .right-content .shanghu-content li {
+	display: flex;
+	justify-content: space-between;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
+}
+
+.system-right .right-content .shanghu-content li:nth-child(odd) {
+	background: #e7f5f6;
+}
+/*打印设置*/
+.system-right .right-content .print-content{
+	padding:30px;
+}
+.system-right .right-content .print-content .rows{
+	
+}
+.system-right .right-content .print-content .row-item{
+	/*padding:20px 0;*/
+	display: flex;
+	align-items: center;
+	height:50px;
+	line-height: 50px;
+}
+.system-right .right-content .print-content .row-item .input-group{
+	height:30px;
+}
+.system-right .right-content .print-content .row-item .sm-input{
+	width:30px;
+	height:30px;
+	padding:0 10px;
+}
+.system-right .right-content .print-content .row-item .btn-sm{
+	height:30px;
+	margin-left:25px;
+	font-size:14px;
+	background: #e5e5e5;
+}
+
+.system-right .right-content .print-content .btn-light-grey{
+	background: #e5e5e5;
+}

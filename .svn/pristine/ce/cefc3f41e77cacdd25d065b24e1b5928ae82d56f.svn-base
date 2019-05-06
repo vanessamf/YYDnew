@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>查询</title>
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-switch.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link href="../js/select2/select2.css" rel="stylesheet" />
+		<link href="../js/select2/theme.css" rel="stylesheet" cache="false" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/memberSetting.css" />-->
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="javascript:void(0);" class="back col-xs-2 no-padding" onclick="javascript:history.back(-1);">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				查询
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="member-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="member-left col-md-2 col-sm-2 col-lg-2 no-padding">
+				<ul class="left-menu">
+					<li id="registration.html">
+						注册
+					</li>
+					<li class="active">
+						查询
+					</li>
+					<li id="recharge.html">
+						充值
+					</li>
+				</ul>
+			</div>
+			<!--左边END-->
+
+			<!--右边-->
+			<div class="member-right col-md-10 col-sm-10 col-lg-10 no-padding">
+				<div class="right-content">
+					<div class="query-wrapper">
+						<div class="query-header clearfloat">
+							<ul class="col-sm-12">
+								<li class="col-sm-6 input-group form-horizontal clearfloat">
+									<label for="" class="col-sm-2 control-label date-label">日期：</label>
+									<div class="col-sm-10 form-group calendar-panel ">
+										<div class="col-sm-5 start-date  date no-padding clearfloat" id="datetimepicker" data-date="" data-date-format="dd-mm-yyyy">
+											<input class="span2 form-control" type="text" value="" readonly="readonly">
+											<span class="add-on"><i class="icon-th iconfont icon-rili1"></i></span>
+										</div>
+										<span class="col-sm-2">至</span>
+										<div class="col-sm-5 end-date  date  no-padding">
+											<input class="span2 form-control" type="text" value="" readonly="readonly">
+											<span class="add-on"><i class="icon-th iconfont icon-rili1"></i></span>
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-4 input-group clearfloat">
+									<div class="col-sm-9 col-sm-push-3">
+										<input type="text" name="usr-name" class="form-control " placeholder="请输入会员卡号/手机号">
+									</div>
+								</li>
+								<li class="input-group">
+									<span class="btn sm-round-btn input-sm">查询</span>
+								</li>
+							</ul>
+						</div>
+						<div class="query-container col-sm-12 no-padding clearfloat">
+							<div class="member-content">
+								<div class="table">
+									<div class="table-thead">
+										<div class="member-title table-tr">
+											<span class="table-th" style="width:15%">会员卡号</span>
+											<span class="table-th" style="width:15%">电话号码</span>
+											<span class="table-th" style="width:10%">姓名</span>
+											<span class="table-th" style="width:5%">性别</span>
+											<span class="table-th" style="width:10%">生日</span>
+											<span class="table-th" style="width:10%">余额</span>
+											<span class="table-th" style="width:10%">赠送余额</span>
+											<span class="table-th" style="width:10%">会员类型</span>
+											<span class="table-th" style="width:5%">操作</span>
+											<span class="table-th" style="width:10%">积分</span>
+										</div>
+									</div>
+								</div>
+								<div class="member-list-wrapper">
+									<div class="table">
+										<ul class="member-list table-tbody">
+											<li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li>
+											<li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li>
+											<li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li><li class="table-tr member-item">
+												<span class="table-td" style="width:15%">212124124</span>
+												<span class="table-td" style="width:15%">12323456678</span>
+												<span class="table-td" style="width:10%">张苏苏</span>
+												<span class="table-td" style="width:5%">女</span>
+												<span class="table-td" style="width:10%">09-01</span>
+												<span class="table-td" style="width:10%">1000.00</span>
+												<span class="table-td" style="width:10%">2000.99</span>
+												<span class="table-td" style="width:10%">普通会员</span>
+												<span class="table-td" style="width:5%">编辑</span>
+												<span class="table-td" style="width:10%">1000</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+							<div class="member-paging clearfloat">
+								<!--<i class="prev-btn iconfont icon-shang5" onclick="prevPage(this)"></i>
+								<i class="next-btn iconfont icon-xia4" onclick="nextPage(this)"></i>-->
+								<span class="col-sm-6 prev-btn col-xs-6"onclick="prevPage(this)">上一页</span>
+								<span class="col-sm-6 next-btn col-xs-6"onclick="nextPage(this)">下一页</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--右边END-->
+		</div>
+		<footer id="footer"class="footer">
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js"></script>
+	<script src="../js/select2/select2.js"></script>
+	<script src="../js/select2/select2_zh-CN.js"></script>
+	<script type="text/javascript" src="../js/dialog.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.left-menu li').click(function(e) {
+				window.location.href = e.target.id;
+			})
+		})
+	</script>
+	<script type="text/javascript">
+		(function($) {
+			$(".start-date").datetimepicker({
+				language: "zh-CN",
+				format: 'yyyy-mm-dd',
+				//				todayBtn : 1,
+				autoclose: true,
+				startView: 2,
+				minView: 2,
+				pickerPosition: 'bottom-left',
+				minuteStep: 5,
+				//				startDate:"2018-11-11"
+				//				bootcssVer:3
+			}).on('changeDate', function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				var startTime = event.date;
+				$(".end-date").datetimepicker('setStartDate', startTime);
+				$(".end-date").val("");
+			});
+
+			$(".end-date").datetimepicker({
+				language: "zh-CN",
+				format: 'yyyy-mm-dd',
+				autoclose: true,
+				startView: 2,
+				minView: 2,
+				pickerPosition: 'bottom-left',
+				//				bootcssVer:2
+			}).on('changeDate', function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				var endTime = event.date;
+				$('.start-date').datetimepicker('setEndDate', endTime);
+			});
+			var currentDate=new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate();
+       $(".start-date input").val(currentDate);
+       $(".end-date input").val(currentDate);
+		})(jQuery);
+	</script>
+
+</html>

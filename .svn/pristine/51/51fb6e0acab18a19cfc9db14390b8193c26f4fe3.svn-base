@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>已结账单</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/menu.css" />
+		<link rel="stylesheet" href="../css/orderInfo.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="tableList.html" class="back col-xs-1 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				已结账单
+			</div>
+			<span class="btn-exit">
+					<!--<i class="iconfont icon-shanjian01 large text-white"></i>-->
+			</span>
+		</header>
+		<div class="check-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="check-list col-md-8 col-sm-8 col-lg-9 no-padding">
+				<div class="check-title">
+					<span class="">序号</span>
+					<span class="">开台</span>
+					<span class="">结算</span>
+					<span class="">账单号</span>
+					<span class="">桌台</span>
+					<span class="">金额</span>
+					<span class="">收银员</span>
+				</div>
+				<div class="check-content">
+					<ul>
+						<li class="cc-item">
+							<span>1</span>
+							<span>2018-06-10&nbsp;12:00</span>
+							<span>2018-06-10&nbsp;12:00</span>
+							<span>YY2018061000003</span>
+							<span>A001</span>
+							<span>98.00</span>
+							<span>张乐乐</span>
+						</li>
+						<li class="cc-item">
+							<span>1</span>
+							<span>2018-06-10&nbsp;12:00</span>
+							<span>2018-06-10&nbsp;12:00</span>
+							<span>YY2018061000003</span>
+							<span>A001</span>
+							<span>98.00</span>
+							<span>张乐乐</span>
+						</li>
+						<li class="cc-item">
+							<span>1</span>
+							<span>2018-06-10&nbsp;12:00</span>
+							<span>2018-06-10&nbsp;12:00</span>
+							<span>YY2018061000003</span>
+							<span>A001</span>
+							<span>98.00</span>
+							<span>张乐乐</span>
+						</li>
+					</ul>
+					<div class="check-pager">
+						<span>上一页</span>
+						<span>下一页</span>
+					</div>
+				</div>
+				<div class="check-footer">
+					<span class="col-sm-1-5">重新打单</span>
+					<span class="col-sm-1-5"data-toggle="modal" data-target="#overringModal">反结算</span>
+					<span class="col-sm-1-5">按桌台查</span>
+					<span class="col-sm-1-5">按账单查</span>
+					<span class="col-sm-1-5">全部列出</span>
+				</div>
+			</div>
+			<!--左边END-->
+
+			<!--右边·账单明细-->
+			<div class="check-detail-wrapper col-md-4 col-sm-4 col-lg-3 no-padding">
+				<div class="check-detail-content">
+				<div class="check-detail-title">
+					<p class="title">账单明细</p>
+					<p>
+						2018-06-18&nbsp;13:24
+					</p>
+				</div>
+				<div class="check-detail-count">
+					<ul>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">现金</span>
+								<span class="col-sm-4">10.00</span>
+								<span class="col-sm-2">2</span>
+							</div>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">整单八折</span>
+								<span class="col-sm-4">10.00</span>
+								<span class="col-sm-2">2</span>
+							</div>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋
+								</span>
+								<span class="col-sm-4">10.00</span>
+								<span class="col-sm-2">2</span>
+							</div>
+							<!--<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">油炸</span>
+									<span class="col-sm-2">0</span>
+								</li>
+							</ul>-->
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+									番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4"></span>
+								<span class="col-sm-2">2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">油炸</span>
+									<span class="col-sm-2">0</span>
+								</li>
+							</ul>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4"></span>
+								<span class="col-sm-2">2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">油炸</span>
+									<span class="col-sm-2">0</span>
+								</li>
+							</ul>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4"></span>
+								<span class="col-sm-2">2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">油炸</span>
+									<span class="col-sm-2">0</span>
+								</li>
+							</ul>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4"></span>
+								<span class="col-sm-2">2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">油炸</span>
+									<span class="col-sm-2">0</span>
+								</li>
+							</ul>
+						</li>
+						<li class="check-detail-item">
+							<div>
+								<span class="col-sm-6">
+								番茄鸡蛋番茄鸡蛋番茄鸡蛋
+								</span>
+								<span class="col-sm-4"></span>
+								<span class="col-sm-2">2</span>
+							</div>
+							<ul class="sub-item">
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">花生米</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-6 ml10">油炸</span>
+									<span class="col-sm-2">0</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<div class="check-info-fee">
+					<ul>
+						<li>
+							<span>折扣</span>
+							<span>0.00</span>
+						</li>
+						<li>
+							<span>服务费</span>
+							<span>0.00</span>
+						</li>
+						<li>
+							<span>税</span>
+							<span>0.00</span>
+						</li>
+						<li>
+							<span>小费</span>
+							<span>0.00</span>
+						</li>
+					</ul>
+					<div class="pay-sum">
+						<span>实收：90.00</span>
+						<span>找零：10.00</span>
+					</div>
+				</div>
+			</div>
+			<!--右边END-->
+		</div>
+		<footer class="footer">
+			<div class="col-md-3 col-sm-4 col-xs-4">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="col-md-4 col-sm-5 col-xs-5">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+		<!--弹窗-->
+		<!--确认反结算-->
+<div class="modal fade" id="overringModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">确认反结算？</h4>
+			</div>
+			<div class="modal-body  clearfloat">
+				<div class="overring-container">
+					<span class="reason-btn active">支付问题？<i class="iconfont icon-gou"></i></span>
+					<span class="reason-btn">菜品问题？</span>
+					<span class="reason-btn">其它问题？</span>
+					<li class="reason-btn itemempty"></li>
+					<li class="reason-btn itemempty"></li>
+				</div>
+			</div>
+			<div class="modal-footer no-border">
+				<button type="button" class="btn " >确定</button>
+				<button type="button" class="btn "data-dismiss="modal">退出</button>
+			</div>
+		</div>
+	</div>
+</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".btn-warning").click(function() {
+				window.location.href = "payment.html";
+			})
+		})
+	</script>
+<script type="text/javascript">
+	$(".overring-container .reason-btn").on("click", function() {
+		if(!$(this).hasClass("active")) {
+			$(this).siblings(".reason-btn").removeClass("active");
+			$(this).siblings(".reason-btn").children("i").remove();
+			$(this).addClass("active");
+			var html = '<i class="iconfont icon-gou"></i>';
+			$(this).append(html);
+		}
+	})
+</script>
+</html>

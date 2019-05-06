@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>充值</title>
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-switch.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link href="../js/select2/select2.css" rel="stylesheet" />
+		<link href="../js/select2/theme.css" rel="stylesheet" cache="false" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/memberSetting.css" />-->
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="javascript:void(0);" class="back col-xs-2 no-padding" onclick="javascript:history.back(-1);">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				充值
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="member-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="member-left col-md-2 col-sm-2 col-lg-2 no-padding">
+				<ul class="left-menu">
+					<li id="registration.html">
+						注册
+					</li>
+					<li id="query.html">
+						查询
+					</li>
+					<li class="active">
+						充值
+					</li>
+				</ul>
+			</div>
+			<!--左边END-->
+
+			<!--右边-->
+			<div class="member-right col-md-10 col-sm-10 col-lg-10 no-padding">
+				<div class="right-content">
+					<div class="registration-content recharge-content">
+						<form id="f_store_info" class="form-horizontal clearfloat">
+							<div class="form-container col-sm-4">
+								<div class="form-group col-sm-12 no-padding">
+									<div id="radio-group" class="">
+										<label class="radio-inline"onclick="changeCardType('radPhone')">
+											手机号
+	       									<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"checked="checked">
+        									</label>
+										<label class="radio-inline"onclick="changeCardType('radCard')">
+											卡号
+	        									<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+         								</label>
+									</div>
+								</div>
+								<div class="col-sm-12 no-padding readCardType radPhone"> 
+									<div class="form-group search-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">手机号：</label>
+										<div class="col-sm-8 no-padding">
+											<input type="text" name="usr-name" class="form-control ivalidate-box ivalidate-normal" data-validate-options="required: true" data-ref="ivtip-0">
+											<span data-toggle="modal" data-target="#openSearchModal">查询</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 no-padding readCardType radCard" style="display: none;">
+									<div class="form-group search-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">卡号：</label>
+										<div class="col-sm-8 no-padding">
+											<input type="text" name="usr-name" class="form-control ivalidate-box ivalidate-normal" data-validate-options="required: true" data-ref="ivtip-0">
+											<span>读卡</span>
+										</div>
+									</div>
+									<!--<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">姓名：</label>
+										<div class="col-sm-8 no-padding">
+											苏苏
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">性别：</label>
+										<div class="col-sm-8 no-padding">
+											女
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">生日：</label>
+										<div class="col-sm-8  no-padding">
+											1995-10-20
+										</div>
+									</div>
+
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">卡号：</label>
+										<div class="col-sm-8 no-padding">
+											1212421421414
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">余额：</label>
+										<div class="col-sm-8 no-padding">
+											9.99
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">类型：</label>
+										<div class="col-sm-8 no-padding">
+											金卡
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">积分：</label>
+										<div class="col-sm-8 no-padding">
+											666
+										</div>
+									</div>-->
+								</div>
+								<div class="col-sm-12 no-padding" style="">
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">姓名：</label>
+										<div class="col-sm-8 no-padding">
+											苏苏
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">性别：</label>
+										<div class="col-sm-8 no-padding">
+											女
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">手机号：</label>
+										<div class="col-sm-8 no-padding">
+											13028367728
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">生日：</label>
+										<div class="col-sm-8  no-padding">
+											1995-10-20
+										</div>
+									</div>
+
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">卡号：</label>
+										<div class="col-sm-8 no-padding">
+											1212421421414
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">余额：</label>
+										<div class="col-sm-8 no-padding">
+											9.99
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">类型：</label>
+										<div class="col-sm-8 no-padding">
+											金卡
+										</div>
+									</div>
+									<div class="form-group clearfloat">
+										<label for="" class="col-sm-4 no-padding control-label">积分：</label>
+										<div class="col-sm-8 no-padding">
+											666
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group  clearfloat">
+									<label for="" class="col-sm-4 no-padding control-label">充值：</label>
+									<div class="col-sm-8 no-padding">
+										<input type="text" name="usr-name" class="form-control ivalidate-box ivalidate-normal" data-validate-options="required: true" data-ref="ivtip-0">
+									</div>
+								</div>
+								<div class="form-group  clearfloat">
+									<label for="" class="col-sm-4 no-padding control-label">赠送：</label>
+									<div class="col-sm-8 no-padding">
+										<input type="text" name="usr-name" class="form-control ivalidate-box ivalidate-normal" data-validate-options="required: true" data-ref="ivtip-0">
+									</div>
+								</div>
+								<div class="form-group  clearfloat">
+									<label for="" class="col-sm-12 no-padding control-label">付款方式：</label>
+									<div class="payType col-sm-12 no-padding">
+										<span class="active">微信</span>
+										<span class="">支付宝</span>
+										<span class="">银行卡</span>
+										<span class="">微信</span>
+										<span class="">支付宝</span>
+										<span class="">银行卡</span>
+										<span class="">微信</span>
+										<span class="">支付宝</span>
+										<span class="">银行卡</span>
+										<span class="">银行卡</span>
+									</div>
+								</div>
+							</div>
+							<div class=" col-sm-4">
+								<div class="registration-keyboard">
+									<span class="key">1</span>
+									<span class="key">2</span>
+									<span class="key">3</span>
+									<span class="key">4</span>
+									<span class="key">5</span>
+									<span class="key">6</span>
+									<span class="key">7</span>
+									<span class="key">8</span>
+									<span class="key">9</span>
+									<span class="key">0</span>
+									<span class="key">.</span>
+									<span class="key btn-clear">删除</span>
+								</div>
+								<div class="confirm-apply-account openCard" data-toggle="modal" data-target="#openRechargeModal">充值</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--右边END-->
+		</div>
+		<footer id="footer"class="footer">
+		</footer>
+		<!--弹框-->
+		<!--充值交易-->
+		<div class="modal fade in" id="openRechargeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog md-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">提示</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+						<div class="reserve-container">
+							<p class="">本次交易：500.00</p>
+							<p class="">实充：500.00</p>
+							<p class="">赠送：100</p>
+							<p class="">付款方：支付宝</p>
+							<p class="inquiry">是否确定本次交易？</p>
+						</div>
+					</div>
+					<div class="modal-footer no-border">
+						<button type="button" class="btn">确认</button>
+						<button type="button" class="btn" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--充值查询-->
+		<div class="modal fade in" id="openSearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog md-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">充值查询</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+						<div class="recharge-search-wrapper">
+							<div class="member-container">
+							<div class="member-title">
+								<span class="col-sm-3 no-padding">姓名</span>
+								<span class="col-sm-3 no-padding">卡号</span>
+								<span class="col-sm-3 no-padding">手机号</span>
+								<span class="col-sm-3 no-padding">余额</span>
+							</div>
+							<ul class="member-list">
+								<li class="clearfloat active">
+									<span class="col-sm-3 no-padding">苏苏</span>
+									<span class="col-sm-3 no-padding">12342345678</span>
+									<span class="col-sm-3 no-padding">23456789012</span>
+									<span class="col-sm-3 no-padding number-container">
+										45.99
+									</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-3 no-padding">苏苏</span>
+									<span class="col-sm-3 no-padding">12342345678</span>
+									<span class="col-sm-3 no-padding">23456789012</span>
+									<span class="col-sm-3 no-padding number-container">
+										45.99
+									</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-3 no-padding">苏苏</span>
+									<span class="col-sm-3 no-padding">12342345678</span>
+									<span class="col-sm-3 no-padding">23456789012</span>
+									<span class="col-sm-3 no-padding number-container">
+										45.99
+									</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-3 no-padding">苏苏</span>
+									<span class="col-sm-3 no-padding">12342345678</span>
+									<span class="col-sm-3 no-padding">23456789012</span>
+									<span class="col-sm-3 no-padding number-container">
+										45.99
+									</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-sm-3 no-padding">苏苏</span>
+									<span class="col-sm-3 no-padding">12342345678</span>
+									<span class="col-sm-3 no-padding">23456789012</span>
+									<span class="col-sm-3 no-padding number-container">
+										45.99
+									</span>
+								</li>
+							</ul>
+							<div class="member-footer clearfloat">
+								<span class="col-sm-3 col-sm-push-6 sup-prev">上一页</span>
+								<span class="col-sm-3 col-sm-push-6 sup-next">下一页</span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="modal-footer no-border">
+						<button type="button" class="btn">确认</button>
+						<button type="button" class="btn" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js"></script>
+	<script src="../js/select2/select2.js"></script>
+	<script src="../js/select2/select2_zh-CN.js"></script>
+	<script type="text/javascript" src="../js/dialog.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.left-menu li').click(function(e) {
+				window.location.href = e.target.id;
+			})
+		})
+		/*查询类型切换*/
+function changeCardType(obj) {
+    $(".readCardType").hide();
+    $("." + obj).show();
+}
+	</script>
+	<script type="text/javascript">
+		
+		(function($) {
+			$('.sel2-control').select2({
+				placeholder: "请选择",
+				minimumResultsForSearch: -1,
+				allowClear: true
+			})
+		})(jQuery);
+		(function($) {
+			$(".date").datetimepicker({
+				language: "zh-CN",
+				format: 'yyyy-mm-dd',
+				autoclose: true,
+				startView: 2,
+				minView: 2,
+				pickerPosition: 'bottom-left',
+				minuteStep: 5,
+			});
+		})(jQuery)
+	</script>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>系统设置-打印设置</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-switch.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/systemSetting.css" />-->
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="javascript:void(0);" class="back col-xs-2 no-padding" onclick="javascript:history.back(-1);">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				系统设置
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="system-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="system-left col-md-2 col-sm-2 col-lg-2 no-padding">
+				<ul class="left-menu">
+					<li id="shanghuSetting.html">
+						<i class="iconfont icon-shanghurenzheng"></i> 商户信息
+					</li>
+					<li class="active">
+						<i class="iconfont icon-dayin1"></i> 打印设置
+					</li>
+					<li id="monitoringSetting.html">
+						<i class="iconfont icon-jiankong1"></i> 厨房监控设置
+					</li>
+					<li id="funcSetting.html">
+						<i class="iconfont icon-rili3"></i> 功能设置
+					</li>
+					<li id="AccountSetting.html">
+						<i class="iconfont icon-wallet"></i> 账户管理
+					</li>
+					<li id="outerScreenSetting.html">
+						<i class="iconfont icon-computer"></i> 外屏设置
+					</li>
+					<li id="msgCenter.html">
+						<i class="iconfont icon-tubiao15"></i> 消息中心
+					</li>
+					<li id="pwdSetting.html">
+						<i class="iconfont icon-jianpan3"></i> 修改密码
+					</li>
+					<li id="moreSetting.html">
+						<i class="iconfont icon-more"></i> 本机设置
+					</li>
+				</ul>
+			</div>
+			<!--左边END-->
+
+			<!--右边-->
+			<div class="system-right col-md-10 col-sm-10 col-lg-10 no-padding">
+				<div class="right-content">
+					<div class="print-content">
+						<div class="rows clearfloat">
+							<div class="col-sm-7 col-md-7 no-padding row-item">
+								<div class="">小票走纸行数：</div>
+								<div class="">
+									<div class="input-group">
+										<span class="btn-light-grey input-group-addon">-</span>
+										<input value="1" type="text" class="sm-input form-control" aria-label="Amount (to the nearest dollar)">
+										<span class="btn-light-grey input-group-addon">+</span>
+									</div>
+								</div>
+								<div class="text-center">
+									<button type="button" class="btn-sm btn-light-grey">打印测试页</button>
+								</div>
+
+							</div>
+							<div class="col-sm-5 col-md-5 no-padding row-item">
+								<div class="">针式打印机：</div>
+
+								<div class="btn-group btn-group-sm is-zhenshi" role="group" aria-label="...">
+									<button type="button" class="btn btn-default btn-light-green">是</button>
+									<button type="button" class="btn btn-default">否</button>
+								</div>
+							</div>
+						</div>
+						<div class="rows clearfloat">
+							<div class="col-sm-7 col-md-7 no-padding row-item">
+								<div class="">结账单打印张数：</div>
+								<button type="button" class="btn-sm btn-light-green">1</button>
+								<button type="button" class="btn-sm btn-light-grey">2</button>
+								<button type="button" class="btn-sm btn-light-grey">3</button>
+							</div>
+							<div class="col-sm-5 col-md-5 no-padding row-item">
+								<div class="">打印规格：</div>
+								<button type="button" class="btn-sm">58mm</button>
+								<button type="button" class="btn-sm btn-light-green">80mm</button>
+							</div>
+						</div>
+						<!--<div class="rows clearfloat">
+							<div class="col-sm-7 col-md-7 no-padding row-item">
+								<div class="">外卖配送单打印张数：</div>
+								<button type="button" class="btn-sm btn-light-green">1</button>
+								<button type="button" class="btn-sm btn-light-grey">2</button>
+								<button type="button" class="btn-sm btn-light-grey">3</button>
+							</div>
+							<div class="col-sm-5 col-md-5 no-padding row-item">
+								<div class="">从小票打印机打印：</div>
+								<div class="btn-group btn-group-sm is-zhenshi" role="group" aria-label="...">
+									<button type="button" class="btn btn-default" id="print-type1">是</button>
+									<button type="button" class="btn btn-default  btn-light-green" id="print-type2">否</button>
+								</div>
+							</div>
+						</div>-->
+						<div id="print-type" class="rows print-type clearfloat" style="display: flex">
+							<div id="" style="">
+								打印机类型：
+							</div>
+							<div class="type-content">
+								<div class="type-tab">
+									<ul class="nav nav-pills clearfloat">
+										<li class="tab-nav btn-light-green active">
+											<a href="#webprint" data-toggle="tab" aria-expanded="true">网络打印</a>
+										</li>
+										<li class="tab-nav">
+											<a href="#setupprint" data-toggle="tab" aria-expanded="false">驱动打印</a>
+										</li>
+										<li class="tab-nav">
+											<a href="#usbprint" data-toggle="tab">串口打印</a>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-content">
+									<div id="webprint" class="tab-pane clearfloat active">
+										<div class="col-xs-6">
+											<label class="pull-left line-hg">小票打印机IP：</label>
+
+											<div class="col-xs-7" style="padding:0">
+												<input class="form-control" type="text" ng-model="xiaopiaoSetting.wangluo_DayinjiIP" ng-blur="changeDayinIP()">
+											</div>
+										</div>
+										<div class="col-xs-6">
+											<label class="pull-left line-hg">端口：</label>
+											<div class="col-xs-7" style="padding:0">
+												<input class="form-control" type="text" ng-model="xiaopiaoSetting.wangluo_Port" ng-blur="changeWangluoPort()" placeholder="默认9100">
+											</div>
+										</div>
+									</div>
+									<div id="setupprint" class="tab-pane menu-list clearfloat">
+										<div class="col-xs-6">
+											<label class="pull-left line-hg">系统打印机：</label>
+											<div class="col-xs-7">
+												<select class="form-control">
+													<option  value="">
+														1
+													</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div id="usbprint" class="tab-pane menu-list clearfloat">
+										<div class="col-xs-6">
+											<label class="pull-left line-hg">端口：</label>
+
+											<div class="col-xs-8">
+												<select class="form-control pull-left" >
+													<option selected="selected" disabled="disabled"  style='display: none' value=''></option>
+													<option  value="">
+														COM1
+													</option>
+													<option  value="">
+													COM2
+													</option>
+													<option  value="">
+													COM3
+													</option>
+													<option  value="">
+													COM4
+													</option>
+													<option  value="">
+													COM5
+													</option>
+													
+													<option  value="">
+													COM6
+													</option>
+													<option  value="">
+													COM7
+													</option>
+													<option  value="">
+													COM8
+													</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-xs-6">
+											<label class="pull-left line-hg">波特率：</label>
+
+											<div class="col-xs-8">
+												<select class="form-control pull-left">
+													<option selected="selected" disabled="disabled"  style='display: none' value=''></option>
+													<option value="">
+														1200
+													</option>
+													<option value="">
+														2400
+													</option>
+													<option value="">
+														4800
+													</option>
+													<option value="">
+														9600
+													</option>
+													<option value="">
+														19200
+													</option>
+													<option value="">
+														57600
+													</option>
+													<option value="">
+														115200
+													</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--<div id="print-type" style="display: block">
+							<div class="row-item">
+								<div>打印机类型： <button class="btn-light-green btn-type">网络打印</button>
+									<button class="btn-light-grey btn-type">驱动打印</button>
+									<button class="btn-light-blue btn-type">串口打印</button></div>
+							</div>
+							<div class="row-item">
+								小票打印机IP:　193.129.32.12 　　　 端口：9100
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--左边END-->
+		</div>
+		<footer id="footer"class="footer">
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.left-menu li').click(function(e) {
+				window.location.href = e.target.id;
+			})
+		})
+		$(".is-zhenshi").on('click', 'button', function() {
+			var $this = $(this);
+			$this.siblings().removeClass('btn-light-green');
+			$this.addClass('btn-light-green');
+		})
+
+		$('#print-type1').click(function(e) {
+			$('#print-type').show()
+		})
+		$('#print-type2').click(function(e) {
+			$('#print-type').hide()
+		})
+
+	</script>
+
+</html>

@@ -1,0 +1,312 @@
+<!--<div class="logo col-xs-2">
+				<img class="" src="../images/logo.png" alt="">
+			</div>-->
+<a href="javascript:void(0);" class="back col-xs-2 no-padding" onclick="javascript:history.back(-1);">
+	<i class="iconfont icon-fanhui"></i> 返回
+</a>
+<div class="nav col-xs-9">
+	<span class="nav-item" data-toggle="modal" data-target="#callModal">叫号</span>
+	<span class="nav-item">沽清</span>
+	<span class="nav-item" data-toggle="modal" data-target="#saleTypeModal">堂食</span>
+	<span class="nav-item" data-toggle="modal" data-target="#remarkModal">账单备注</span>
+	<span class="nav-item" data-toggle="modal" data-target="#separateBillsModal">分单</span>
+	<span class="nav-item">合单</span>
+	<span class="nav-item" data-toggle="modal" data-target="#moreFunctionModal">更多功能</span>
+</div>
+<span class="btn-exit">
+	<i class="iconfont icon-shanjian01 large text-white"></i>
+</span>
+
+<!--modal-->
+<!--账单备注-->
+<div class="modal fade" id="remarkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+	<div class="modal-dialog md-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">账单备注</h4>
+			</div>
+			<div class="modal-body  no-padding clearfloat">
+				<div class="remark-wrapper clearfloat">
+					<textarea name="textarea" rows="4" cols="" placeholder=""></textarea>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn " data-dismiss="modal">确定</button>
+				<button type="button" class="btn ">退出</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--堂食-->
+<div class="modal fade" id="saleTypeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog sm-dialog sm-dialog-H" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">销售类型</h4>
+			</div>
+			<div class="modal-body  no-padding clearfloat">
+				<form class="form-horizontal dish-form clearfloat">
+					<div class="sup-dish-container saleType-container col-sm-12 no-padding">
+						<ul class="dish-list">
+							<li class="active">
+								<span>堂吃</span>
+								<i class="iconfont icon-gou"></i>
+							</li>
+							<li>
+								<span>外带</span>
+							</li>
+						</ul>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn " data-dismiss="modal">确定</button>
+				<button type="button" class="btn ">退出</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--更多功能-->
+<div class="modal fade" id="moreFunctionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">更多功能</h4>
+			</div>
+			<div class="modal-body  clearfloat">
+				<div class="more-function-container">
+					<span class="more-btn">更新</span>
+					<span class="more-btn table-unlock" data-toggle="modal" data-target="#tableUnlockModal">桌台解锁</span>
+					<span class="more-btn">打开钱箱</span>
+					<span class="more-btn sysSetting">系统设置</span>
+					<span class="more-btn" data-toggle="modal" data-target="#dailySettlementModal">日结</span>
+					<span class="more-btn" data-toggle="modal" data-target="#cashDepositModal">存现金</span>
+					<span class="more-btn" data-toggle="modal" data-target="#cashWithdrawModal">取现金</span>
+					<span class="more-btn orderInfo">已结账单</span>
+					<span class="more-btn">收银员报表</span>
+					<span class="more-btn">菜品销售报表</span>
+					<span class="more-btn">系统销售报表</span>
+					<span class="more-btn">订单流水报表</span>
+					<span class="more-btn">本机离线对账单</span>
+					<span class="more-btn">登出</span>
+					<li class="more-btn itemempty"></li>
+					<li class="more-btn itemempty"></li>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--存现金-->
+<div class="modal fade" id="cashDepositModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog sml-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">存现金</h4>
+			</div>
+			<div class="modal-body  clearfloat">
+				<div class="cash-container">
+					<div class="cash-input">
+						<input type="" class="form-control" id="inputPassword3" placeholder="请输入金额">
+						<i class="iconfont icon-guanbi"></i>
+					</div>
+					<div class="keyboard">
+						<span class="key">1</span>
+						<span class="key">2</span>
+						<span class="key">3</span>
+						<span class="key">4</span>
+						<span class="key">5</span>
+						<span class="key">6</span>
+						<span class="key">7</span>
+						<span class="key">8</span>
+						<span class="key">9</span>
+						<span class="key">0</span>
+						<span class="key">.</span>
+						<span class="key btn-clear">清除</span>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer no-border">
+				<button type="button" class="btn ">确定</button>
+				<button type="button" class="btn " data-dismiss="modal">退出</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--取现金-->
+<div class="modal fade" id="cashWithdrawModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog sml-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">取现金</h4>
+			</div>
+			<div class="modal-body  clearfloat">
+				<div class="cash-container">
+					<div class="cash-input">
+						<input type="" class="form-control" id="inputPassword3" placeholder="请输入金额">
+						<i class="iconfont icon-guanbi"></i>
+					</div>
+					<div class="keyboard">
+						<span class="key">1</span>
+						<span class="key">2</span>
+						<span class="key">3</span>
+						<span class="key">4</span>
+						<span class="key">5</span>
+						<span class="key">6</span>
+						<span class="key">7</span>
+						<span class="key">8</span>
+						<span class="key">9</span>
+						<span class="key">0</span>
+						<span class="key">.</span>
+						<span class="key btn-clear">清除</span>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer no-border">
+				<button type="button" class="btn ">确定</button>
+				<button type="button" class="btn " data-dismiss="modal">退出</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--叫号-->
+<div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+	<div class="modal-dialog lg-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">叫号</h4>
+			</div>
+			<div class="modal-body  no-padding clearfloat">
+				<form class="form-horizontal dish-form clearfloat">
+					<div class="col-sm-6 no-padding">
+						<div class="sup-dish-container col-sm-12 no-padding">
+							<div class="call-tab">
+								<ul class="nav nav-pills clearfloat">
+									<li class="tab-nav">
+										<a href="#takeFood" data-toggle="tab" aria-expanded="false">待取餐</a>
+									</li>
+									<li class="tab-nav active">
+										<a href="#takeFood2" data-toggle="tab" aria-expanded="true">已取餐</a>
+									</li>
+								</ul>
+							</div>
+							<ul class="dish-list sup-dish-list">
+								<li class="checkbox">
+									<label>
+												<input type="checkbox" class="qx"> 
+												<span class="col-sm-3">1010</span>
+												<span class="col-sm-6">蒸菜系列做法</span>
+												<span class="col-sm-3">10</span>
+											</label>
+								</li>
+							</ul>
+							<div class="sup-dish-footer clearfloat">
+								<span class="col-sm-6 sup-prev  col-xs-6">上一页</span>
+								<span class="col-sm-6 sup-next col-xs-6">下一页</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 no-padding">
+						<div class="sup-dish-container sub-dish-container">
+							<div class="sup-dish-title clearfloat">
+								<span class="col-xs-12  col-sm-12">菜品名称</span>
+							</div>
+							<ul class="dish-list sub-dish-list">
+								<li class=" clearfloat">
+									<span class="col-xs-8 col-sm-8 ">蒜蓉qwrsdfsqwrqw茄子</span>
+									<span class="col-xs-4 col-sm-4">X121</span>
+								</li>
+								<li class=" clearfloat">
+									<span class="col-xs-8 col-sm-8 ">蒜蓉qwrsdfsqwrqw茄子</span>
+									<span class="col-xs-4 col-sm-4">X121</span>
+								</li>
+								<li class=" clearfloat">
+									<span class="col-xs-8 col-sm-8 ">蒜蓉qwrsdfsqwrqw茄子</span>
+									<span class="col-xs-4 col-sm-4">X121</span>
+								</li>
+							</ul>
+							<div class="sup-dish-footer">
+								<span class="col-sm-6 col-xs-6 sub-prev">上一页</span>
+								<span class="col-sm-6 col-xs-6 sub-next">下一页</span>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn " data-dismiss="modal">确定</button>
+				<button type="button" class="btn ">退出</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--分单-->
+<div class="modal fade" id="separateBillsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+	<div class="modal-dialog xl-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">分单</h4>
+			</div>
+			<div class="modal-body  no-padding clearfloat">
+				<div class="separateBills-wrapper col-sm-12 no-padding clearfloat">
+					<div class="col-sm-4  no-padding bills-column">
+						<div class="column-title">单号：04002</div>
+						<div class="column-content">
+							<ul class="dish-list">
+								<li class="radio">
+									<label>
+											<input type="radio" class="qx"> 
+											<span class="col-sm-3">1001</span>
+											<span class="col-sm-6">蒸菜系列afsfds做法</span>
+											<span class="col-sm-3">10</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="column-footer">总价：30.00</div>
+					</div>
+					<div class="col-sm-4 bills-column"></div>
+					<div class="col-sm-4 bills-column"></div>
+				</div>
+				<div class="separateBills-footer col-sm-12 no-padding clearfloat">
+					<span class="col-sm-1-5">新建</span>
+					<span class="col-sm-1-5">保存</span>
+					<span class="col-sm-1-5">一键分单</span>
+					<span class="col-sm-1-5">取消</span>
+					<span class="col-sm-1-5">账单列表</span>
+				</div>
+			</div>
+			<!--<div class="modal-footer">
+				<button type="button" class="btn " data-dismiss="modal">确定</button>
+				<button type="button" class="btn ">退出</button>
+			</div>-->
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".more-function-container").on("click", ".more-btn", function() {
+			$("#moreFunctionModal").modal('hide');
+		});
+		$(".sysSetting").click(function() {
+			window.location.href = "../page/shanghuSetting.html";
+		});
+		$(".orderInfo").click(function() {
+			window.location.href = "../page/orderInfo.html";
+		});
+		okPromptDialog("tableUnlockModal", "提示", "桌台解锁成功！", "300px");
+		okPromptDialog("dailySettlementModal", "提示", "日结完成！", "300px");
+	});
+</script>
+<script type="text/javascript">
+	$(".saleType-container ul li").on("click", function() {
+		if(!$(this).hasClass("active")) {
+			$(this).siblings("li").removeClass("active");
+			$(this).siblings("li").children("i").remove();
+			$(this).addClass("active");
+			var html = '<i class="iconfont icon-gou"></i>';
+			$(this).append(html);
+			//$(this).siblings("li").children("i").removeClass("icon-gou");
+			//$(this).children("i").addClass("icon-gou");
+		}
+	})
+</script>

@@ -1,0 +1,297 @@
+/*报表*/
+
+.report-wrapper {
+	height: calc(100% - 85px);
+	font-size: 14px;
+	background: #fff;
+}
+
+.report-wrapper .report-header ul {
+	/*line-height: 50px;*/
+	padding: 5px 0px 5px 20px;
+}
+
+.report-wrapper .report-header ul>li {
+	display: inline-block;
+	/*margin-right: 10px;*/
+	margin:5px 0;
+	height: 35px;
+	line-height: 35px;
+}
+.report-wrapper .report-header ul>li.checkbox{
+	/*margin:0;*/
+}
+.report-wrapper .report-header ul>li.checkbox input[type=checkbox]{
+	    margin: 11px 0 0 -20px;
+}
+.report-wrapper .report-header ul>li .control-label {
+	float: left;
+	font-weight: 400;
+	/* max-width: 75px; */
+	max-width: 100px;
+	margin-bottom: 0;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.report-wrapper .report-header ul>li .calendar-panel {
+	display: inline-block;
+	margin: 0;
+	height: 35px;
+	line-height: 35px;
+}
+
+.report-wrapper .report-header ul>li  .date {
+	height: 35px;
+	position: relative;
+	display: inline-block;
+	/*width:200px;*/
+}
+
+.report-wrapper .report-header ul>li .calendar-panel .date input {
+	/*float: none;*/
+}
+
+.report-wrapper .report-header ul>li .add-on {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.report-wrapper .report-header ul>li i {
+	padding: 0 5px;
+	/* line-height: .4rem; */
+	line-height: 35px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #778091;
+	float: left;
+	font-style: normal;
+}
+
+.report-wrapper .report-header ul>li .calendar-panel>span {
+	display: inline-block;
+	/*vertical-align: middle;
+	line-height: 35px;*/
+	/*vertical-align: middle;*/
+	/*width:90px;*/
+	height: 100%;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.report-wrapper .report-header ul>li select {
+	float: none;
+	display: inline-block;
+	height: 35px;
+	width: 100%;
+	/*width: 200px;*/
+	border-radius: 0;
+}
+
+.report-wrapper .report-header ul>li .sm-round-btn {
+	display: inline-block;
+	position: relative;
+	/* border: 1px solid rgba(0,0,0,0.21); */
+	float: left;
+	vertical-align: middle;
+	height: 35px;
+	line-height: 35px;
+	outline: none;
+	padding: 0 10px;
+	font-family: inherit;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	background: #ff9600;
+	border: 1px solid rgba(128, 119, 119, 0.21);
+	border-bottom-color: rgba(70, 72, 71, 0.34);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset, 0 2px 0 -1px rgba(0, 0, 0, 0.13), 0 3px 0 -1px rgba(0, 0, 0, 0.08), 0 3px 13px -1px rgba(0, 0, 0, 0.21);
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.report-wrapper .report-header ul>li .sm-round-btn:active {
+	position: relative;
+	top: 1px;
+	border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.report-container {
+	height: calc(100% - 120px);
+	color: #000;
+}
+
+.report-container .bills-column {
+	height: 100%;
+	border-right: 1px solid #d2d2d2;
+}
+
+.report-container .bills-column:last-child {
+	border: none;
+}
+
+.bills-column .column-title {
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	background: #0dd6ce;
+}
+
+.bills-column .column-title span {
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.bills-column .column-title span:first-child{
+	text-align: left;
+}
+.bills-column .column-title span:last-child{
+	text-align: right;
+}
+.bills-column .column-content {
+	height: calc(100% - 140px);
+	overflow: hidden;
+}
+
+.bills-column .column-content li {
+	line-height: 35px;
+}
+
+.bills-column .column-content span {
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.bills-column .column-content span:first-child{
+	text-align: left;
+}
+.bills-column .column-content span:last-child{
+	text-align: right;
+}
+.bills-column .column-paging {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-top: 1px solid #d2d2d2;
+	visibility: hidden;
+}
+
+.bills-column .column-paging span {
+	height:100%;
+}
+
+.bills-column .column-paging span:first-child {
+	border-right: 1px solid #d2d2d2;
+}
+
+.bills-column .column-paging span.btn-grey {
+	background: #eee;
+}
+
+.bills-column .column-paging span:active {
+	color: #fff;
+	background: #0ac8c1;
+}
+
+.bills-column .column-paging span.btn-grey:active {
+	color: #000;
+	background: #eee;
+}
+
+.bills-column .column-footer {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #f0ad4e;
+	border-top: 1px solid #d2d2d2;
+}
+
+.separateBills-footer {
+	color: #000;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-top: 1px solid #d2d2d2;
+}
+
+.separateBills-footer span {
+	background: #d5f1f4;
+	border-right: 1px solid #d2d2d2;
+}
+
+/*菜品销售报表*/
+.report-container  .dish-content{
+	height: calc(100% - 50px);
+	overflow-y: auto;
+}
+
+.report-container  .dish-content .table {
+	/*height:300px;*/
+	/*overflow-y: auto;*/
+	table-layout: fixed; 
+	word-break: break-all;
+	    /*word-wrap: break-word;
+    word-break: break-all;*/
+}
+
+.report-container  .dish-title {
+	height: 40px;
+	line-height: 40px;
+	/*display: flex;
+	justify-content: space-between;*/
+}
+
+.report-container  .dish-list-wrapper{
+	height: calc(100% - 40px);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.report-container .dish-list {
+	overflow-y: auto;
+}
+
+.report-container  .dish-item:nth-child(odd) {
+	background: #e7f5f6;
+}
+.report-container  .dish-item span{
+	    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.report-container  .dish-paging{
+	text-align: center;
+    height: 50px;
+	line-height: 50px;
+}
+.report-container  .dish-paging i{
+	color:#b3b3b3;
+	font-size: 26px;
+	border-radius:5px;
+	border:1px solid #b3b3b3;
+}
+.report-container  .dish-paging i:first-child{
+	margin-right:60px;
+}
+.report-container  .dish-paging span{
+	border: 1px solid #d2d2d2;
+}
+.report-container  .dish-paging span:first-child{
+	border-right:none;
+}
+.report-container  .dish-paging span:active{
+    color: #fff;
+    background: #0ac8c1;
+}

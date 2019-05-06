@@ -1,0 +1,290 @@
+.main-wrapper {
+	position: relative;
+	padding: 7px 0 0 0;
+	height: calc(100% - 85px);
+	font-size: 16px;
+}
+
+
+/*左边*/
+
+.waimai-left {
+	height: 100%;
+}
+
+.waimai-left .search-wrapper {
+	height: 45px;
+	line-height: 45px;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.waimai-left .search-wrapper .search-bar {
+	/*width:100%;*/
+	flex: 1;
+	margin-right: 10px;
+}
+
+.waimai-left .search-wrapper .search-bar .search-int input {
+	width: 100%;
+	height: 30px;
+	padding: 0 15px;
+	border: 1px solid #bfbfbf;
+	border-radius: 20px;
+}
+
+.waimai-left .search-wrapper .search-bar .search-int input::-webkit-input-placeholder {
+	color: #cbcbcb;
+	/*font-size: 14px;*/
+	font-family: "iconfont" !important;
+	text-align: center;
+}
+
+.waimai-left .waimai-curdate {
+	display: flex;
+	align-items: center;
+	/*height:30px;*/
+	position: relative;
+	margin-right: 10px
+}
+
+.waimai-left .waimai-curdate .order-date {
+	width: 110px;
+	height: 30px;
+	padding: 6px 10px 6px 6px;
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.waimai-left .waimai-curdate i {
+	/*display: inline-block;*/
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.waimai-left .waimai-refresh {
+	/*flex:1;*/
+}
+
+.waimai-left .wm-order-tab ul {
+	display: flex;
+	height: 45px;
+}
+
+.waimai-left .wm-order-tab>ul>li {
+	flex: 1;
+	background: #59ccde;
+}
+
+.waimai-left .wm-order-tab>ul>li a {
+	height: 45px;
+	text-align: center;
+	border-radius: 0px;
+}
+
+.waimai-left .wm-order-tab .nav-pills>li.active>a,
+.waimai-left .wm-order-tab .nav-pills>li.active>a:focus,
+.waimai-left .wm-order-tab .nav-pills>li.active>a:hover {
+	color: #59ccde;
+	background-color: #fff;
+	border: 1px solid #59ccde;
+}
+
+.waimai-left .wm-order-tab .nav-pills>li a:hover {
+	color: #59ccde;
+	background-color: #fff;
+}
+
+.waimai-left .wm-order-content {
+	height: calc(100% - 90px);
+	background: #fff;
+}
+
+.waimai-left .wm-order-content .wm-order-list {
+	height: 100%;
+}
+
+.waimai-left .wm-order-content .wm-order-list .wm-order-title {
+	height: 50px;
+	line-height: 50px;
+	/*border-bottom: 1px solid #c1c1c1;*/
+	font-weight: 500;
+	background: #e7f5f6;
+}
+
+.waimai-left .wm-order-content .wm-order-list .wm-order-title span {
+	padding: 0 10px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.waimai-left .wm-order-content .wm-order-list>ul {
+	height: calc(100% - 50px);
+	overflow-y: auto;
+}
+
+.waimai-left .wm-order-content .wm-order-list>ul>.ol-item {
+	height: 45px;
+	line-height: 45px;
+	/*border-bottom: 1px solid #c1c1c1;*/
+}
+
+.waimai-left .wm-order-content .wm-order-list>ul>.ol-item:nth-child(even) {
+	background: #e7f5f6;
+}
+
+.waimai-left .wm-order-content .wm-order-list>ul>.ol-item:active,
+.waimai-left .wm-order-content .wm-order-list>ul>.ol-item.active {
+	color: #fff;
+	background: #45d6d1;
+}
+
+.waimai-left .wm-order-content .wm-order-list>ul>.ol-item span {
+	padding: 0 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/*右边*/
+
+.waimai-right {
+	height: 100%;
+	padding-left: 5px;
+}
+
+.waimai-right .order-detail-title {
+	heihgt: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-around;
+	color: #fff;
+	background: #59ccde;
+}
+
+.waimai-right .order-detail {
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-between;*/
+	padding: 10px 25px;
+	height: calc(100% - 55px);
+	background: #fff;
+	overflow: auto;
+}
+
+.waimai-right .order-detail .order-detail-remark {
+	color: #666;
+}
+
+.waimai-right .order-detail .order-detail-dish {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 55%;
+	padding: 25px 0;
+}
+
+.waimai-right .order-detail .order-detail-dish>ul {
+	height: calc(100% - 35px);
+	overflow: auto;
+}
+
+/*.waimai-right .order-detail .order-detail-dish>ul>li {
+	display: flex;
+	justify-content: space-between;
+	line-height: 35px;
+}*/
+.waimai-right .order-detail .order-detail-dish .check-detail-item div {
+	height:35px;
+	line-height: 35px;
+}
+
+.waimai-right .order-detail .order-detail-dish .check-detail-item span {
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+..waimai-right .order-detail .order-detail-dish .check-detail-item .sub-item {
+	font-size: 14px;
+}
+.waimai-right .order-detail .order-detail-dish .navigation {
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.waimai-right .order-detail .order-detail-dish .navigation i {
+	padding: 5px;
+	font-size: 24px;
+}
+.waimai-right .order-detail .order-detail-dish .navigation .dish-number{
+	display: inline-block;
+	height: 100%;
+}
+.waimai-right .order-detail .order-detail-mail {
+	display: flex;
+	justify-content: space-between;
+	line-height: 60px;
+}
+
+.waimai-right .order-detail .order-detail-mail>span:nth-child(2) {
+	color: #0ac7c1;
+}
+
+.waimai-right .order-detail .order-detail-address {
+	padding: 5px 12px;
+	border: 1px solid #bfbfbf;
+	border-radius: 8px;
+}
+
+.waimai-right .order-detail .order-detail-address p {
+	line-height: 30px;
+}
+
+.waimai-right .order-detail .order-detail-address .address-wrapper {
+	display: flex;
+}
+
+.waimai-right .order-detail .order-detail-operation {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 45px 0;
+}
+
+.waimai-right .order-detail .order-detail-operation span {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 5px;
+	background: #eee;
+}
+
+.waimai-right .order-detail .order-detail-operation span:active {
+	color: #fff;
+	background: #45d6d1;
+}
+
+
+/*全部结单*/
+
+.btn-over-all {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	bottom: 60px;
+	height: 60px;
+	width: 60px;
+	color: #0ac7c1;
+	border-radius: 50%;
+	background: #eeeeee;
+}

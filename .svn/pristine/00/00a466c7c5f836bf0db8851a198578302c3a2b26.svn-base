@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>所有弹框</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/menu.css" />-->
+	</head>
+	<style>
+		.modal-wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-flow: wrap;
+			padding: 10px;
+		}
+		
+		.modal-wrapper span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 19%;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			margin-bottom: 10px;
+			color: #000;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			/* background: #eee; */
+			background: #d5f1f4;
+			border-style: solid;
+			border-width: 1px;
+			border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+		}
+		.modal-wrapper span.itemempty {
+			    height: 0;
+   				 border: none;
+		}
+		.modal-wrapper span:active {
+			color: #fff;
+			background: #53d8d3;
+		}
+	</style>
+
+	<body>
+		<header class="header">
+			<a href="tableList.html" class="back col-xs-1 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				所有弹框
+			</div>
+			<span class="btn-exit">
+					<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="modal-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<span data-toggle="modal" data-target="#amountEnterModal">沽清数量</span>
+			<span data-toggle="modal" data-target="#saleTypeModal">销售类型</span>
+			<span data-toggle="modal" data-target="#remarkModal">账单备注</span>
+			<span data-toggle="modal" data-target="#ladingBillModal">提单</span>
+			<span data-toggle="modal" data-target="#splitTableModal">分合桌</span>
+			<span data-toggle="modal" data-target="#changeTableModal">提示换桌</span>
+			<span data-toggle="modal" data-target="#cookTypeModal">自定义做法</span>
+			<span data-toggle="modal" data-target="#giveAwayModal">赠送原因</span>
+			<span data-toggle="modal" data-target="#billCancelModal">账单作废授权</span>
+			<span data-toggle="modal" data-target="#moreFunctionModal">更多功能</span>
+			<span data-toggle="modal" data-target="#tableUnlockModal">提示桌台解锁</span>
+			<span data-toggle="modal" data-target="#dailySettlementModal">提示日结完成</span>
+			<span data-toggle="modal" data-target="#cashDepositModal">存现金</span>
+			<span data-toggle="modal" data-target="#cashWithdrawModal">取现金</span>
+			<span data-toggle="modal" data-target="#overringModal">确认反结算</span>
+			<span data-toggle="modal" data-target="#udfDishModal">自定义商品</span>
+			<span data-toggle="modal" data-target="#vipCardModal">会员卡付款</span>
+			<span data-toggle="modal" data-target="#reserveModal">预订信息</span>
+			<!--<span data-toggle="modal" data-target="#overringModal">会员卡撤销</span>-->
+			<span data-toggle="modal" data-target="#openCardModal">开卡成功</span>
+			<!--<span data-toggle="modal" data-target="#cashDepositModal">充值交易</span>-->
+			<span data-toggle="modal" data-target="#aliPayModal">支付宝扫码</span>
+			<!--<span data-toggle="modal" data-target="#cashWithdrawModal">充值查询</span>-->
+			<!--<span data-toggle="modal" data-target="#cashWithdrawModal">数据更新</span>-->
+			<!--<span data-toggle="modal" data-target="#cashWithdrawModal">系统日结</span>-->
+			<!--<span data-toggle="modal" data-target="#cashWithdrawModal">快餐提单</span>-->
+			<span data-toggle="modal" data-target="#setMealModal">套餐</span>
+			<span data-toggle="modal" data-target="#reverseModal">快速反结算</span>
+			<span data-toggle="modal" data-target="#overfulfilModal">提示超额销售</span>
+			<span data-toggle="modal" data-target="#operationsCompletedModal">提示完成操作</span>
+			<span data-toggle="modal" data-target="#peopleNumModal">人数</span>
+			<span data-toggle="modal" data-target="#pendingOrderModal">挂单成功</span>
+			<span class="btn-keyboard">软键盘</span>
+			<span data-toggle="modal" data-target="#dataUpdatingModal">数据更新</span>
+			<span data-toggle="modal" data-target="#passwordErrorModal">密码错误提示</span>
+			<span data-toggle="modal" data-target="#IDErrorModal">员工错误提示</span>
+			<span data-toggle="modal" data-target="#loginCompleteModal">登录成功</span>
+			<span data-toggle="modal" data-target="#checkOutModal">登出成功</span>
+			<span data-toggle="modal" data-target="#noStatementModal">账单未结</span>
+			<span data-toggle="modal" data-target="#dailyStatementModal">日结</span>
+			<span data-toggle="modal" data-target="#ladingBillPromptModal">提单提示</span>
+			<span data-toggle="modal" data-target="#noBillModal">提单无账单</span>
+			<span data-toggle="modal" data-target="#noTableNumModal">提单桌号</span>
+			<span data-toggle="modal" data-target="#noTableNumPayModal">付款桌号</span>
+			<span data-toggle="modal" data-target="#payModal">多单付款</span>
+			<span data-toggle="modal" data-target="#splitTableNumModal">分合桌桌位</span>
+			<span data-toggle="modal" data-target="#OperationModal">已操作</span>
+			<span data-toggle="modal" data-target="#goBackModal">返回</span>
+			<span data-toggle="modal" data-target="#dishNumModal">数量</span>
+			<span data-toggle="modal" data-target="#ladingBillFirstModal">提单后分单</span>
+			<span data-toggle="modal" data-target="#discountNotAllowModal">不允许折扣</span>
+			<span data-toggle="modal" data-target="#payRemoveModal">先移除付款</span>
+			<span data-toggle="modal" data-target="#discountAuthorizedModal">折扣授权</span>
+			<span data-toggle="modal" data-target="#changeModal">找零</span>
+			<span data-toggle="modal" data-target="#excessModal">券溢收</span>
+			<span data-toggle="modal" data-target="#discountRemoveModal">继续点餐移除折扣和付款方式</span>
+			<span data-toggle="modal" data-target="#billSearchModal">订单查询</span>
+			<span data-toggle="modal" data-target="#onAccountModal">挂账</span>
+			<span class="itemempty"></span>
+			<span class="itemempty"></span>
+			<span class="itemempty"></span>
+		</div>
+		<footer id="footer"class="footer">
+		</footer>
+		<!--所有弹框-->
+		<div id="modal_wrapper">
+
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/dialog.js"></script>
+	<script type="text/javascript" src="../js/circleChart.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#modal_wrapper").load("allModalItem.html");
+		});
+	</script>
+
+</html>

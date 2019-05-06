@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>付款页</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/payment.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="menu.html" class="back col-xs-2 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div class="nav col-xs-9">
+				<span class="nav-item">预定</span>
+				<span class="nav-item">叫号</span>
+				<span class="nav-item">外接单</span>
+				<span class="nav-item">反结算</span>
+				<span class="nav-item">沽清</span>
+				<span class="nav-item">会员</span>
+				<span class="nav-item">更多功能</span>
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="main-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="order-wrapper col-md-4 col-sm-4 col-lg-3 no-padding">
+				<div class="order-header">
+					<span>桌：一品桂圆羹一品桂圆羹</span>
+					<span>人数：333</span>
+					<span>总额：101.00</span>
+					<span>5项</span>
+				</div>
+				<div class="order-title">
+					<span class="col-xs-1  col-sm-1"></span>
+					<span class="col-xs-5  col-sm-5">菜品名称</span>
+					<span class="col-xs-2  col-sm-2">总价</span>
+					<span class="col-xs-4  col-sm-4">数量</span>
+				</div>
+				<div class="order-content">
+					<ul>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">油炸花生米油炸花生米</span>
+								<span class="col-xs-2 col-sm-2">88888.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1000</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+							<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl5">花生米米米米米花花花</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl10">油炸油炸油炸油炸油炸</span>
+									<span class="col-xs-2 col-sm-2">100</span>
+								</li>
+							</ul>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">刀拍黄瓜</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1 col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">同安封肉</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">油炸花生米油炸花生米</span>
+								<span class="col-xs-2 col-sm-2">88888.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">100</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+							<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl5">花生米米米米米花花花</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl10">油炸油炸油炸油炸油炸</span>
+									<span class="col-xs-2 col-sm-2">1000</span>
+								</li>
+							</ul>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">刀拍黄瓜</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1 col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">同安封肉</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">油炸花生米油炸花生米</span>
+								<span class="col-xs-2 col-sm-2">88888.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1000</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+							<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl5">花生米米米米米花花花</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl10">油炸油炸油炸油炸油炸</span>
+									<span class="col-xs-2 col-sm-2">1000</span>
+								</li>
+							</ul>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">刀拍黄瓜</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1 col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">同安封肉</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">油炸花生米油炸花生米</span>
+								<span class="col-xs-2 col-sm-2">88888.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1000</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+							<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl5">花生米米米米米花花花</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl10">油炸油炸油炸油炸油炸</span>
+									<span class="col-xs-2 col-sm-2">1000</span>
+								</li>
+							</ul>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">刀拍黄瓜</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1 col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">同安封肉</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">油炸花生米油炸花生米</span>
+								<span class="col-xs-2 col-sm-2">88888.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1000</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+							<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl5">花生米米米米米花花花</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl10">油炸油炸油炸油炸油炸</span>
+									<span class="col-xs-2 col-sm-2">1000</span>
+								</li>
+							</ul>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">刀拍黄瓜</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1 col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">同安封肉</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">油炸花生米油炸花生米</span>
+								<span class="col-xs-2 col-sm-2">88888.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1000</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+							<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl5">花生米米米米米花花花</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-xs-1 col-sm-1"></span>
+									<span class="col-xs-5 col-sm-5 pl10">油炸油炸油炸油炸油炸</span>
+									<span class="col-xs-2 col-sm-2">1000</span>
+								</li>
+							</ul>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1  col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">刀拍黄瓜</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+						<li class="oc-item">
+							<div>
+								<span class="col-xs-1 col-sm-1 badge-content">
+									<span class="badge badge-dange">
+										堂
+									</span>
+								<span class="checked">
+										已下单
+									</span>
+								</span>
+								<span class="col-xs-5 col-sm-5">同安封肉</span>
+								<span class="col-xs-2 col-sm-2">8.00</span>
+								<span class="col-xs-4 col-sm-4 number-container">
+									<i class="iconfont icon-jian3"></i>
+									<span class="dish-number">1</span>
+								<i class="iconfont icon-jia3"></i>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="order-footer payment-footer">
+					<span class="col-sm-4 col-xs-4">先送</span>
+					<span class="col-sm-4 col-xs-4">挂单</span>
+					<span class="col-sm-4 col-xs-4">整单操作</span>
+				</div>
+			</div>
+			<!--左边END-->
+
+			<!--右边·桌台-->
+			<div class="payment-wrapper col-lg-9 col-md-8 col-sm-8 no-padding">
+				<!--减免详情实付金额-->
+				<div class="payment-account-wrapper col-md-12 col-sm-12 no-padding" style="">
+					<!--付款明细-->
+					<div class="payment-account col-md-6 col-sm-6 no-padding" style="">
+						<div class="account-content">
+							<p class="account-item">
+								<button class="sign">
+									撤
+								</button>
+								<span>现金</span>
+								<span>50.00</span>
+							</p>
+							<p class="account-item">
+								<span>优惠券</span>
+								<span>30.00</span>
+							</p>
+						</div>
+						<div class="account-container">
+							<div class="account-total">
+								<p class="total-item">
+									<span>折扣</span>
+									<span>50.00</span>
+								</p>
+								<p class="total-item">
+									<span>税</span>
+									<span>50.00</span>
+								</p>
+								<p class="total-item">
+									<span>服务费</span>
+									<span>50.00</span>
+								</p>
+								<p class="total-item">
+									<span>小费</span>
+									<span>50.00</span>
+								</p>
+								<p class="total-item">
+									<span>应收</span>
+									<span>50.00</span>
+								</p>
+								<p class="total-item">
+									<span>未付</span>
+									<span>0.00</span>
+								</p>
+							</div>
+							<input type="text" class="pay-sum" value="40.00" />
+						</div>
+					</div>
+					<!--打折操作按钮组-->
+					<div class="account-discount col-md-6 col-sm-6 no-padding">
+						<p class="title">小费</p>
+						<p class="discount-item other-discount">
+							<button class="discount-btn">打包</button>
+							<button class="discount-btn">配送</button>
+
+							<button class="discount-btn">打包</button>
+							<button class="discount-btn">配送</button>
+							<button class="discount-btn">更多</button>
+							<button class="discount-btn">更多</button>
+							<button class="discount-btn">打包</button>
+							<button class="discount-btn">配送</button>
+						</p>
+						<p class="title">单品折扣</p>
+						<p class="discount-item single-discount">
+							<button class="discount-btn">单品8折</button>
+							<button class="discount-btn">单品7折</button>
+							<button class="discount-btn">单品6折</button>
+							<button class="discount-btn">单品8折</button>
+							<button class="discount-btn">单品7折</button>
+							<button class="discount-btn">单品6折</button>
+							<button class="discount-btn">单品8折</button>
+							<button class="discount-btn">单品7折</button>
+							<button class="discount-btn">单品6折</button>
+							<button class="discount-btn">单品8折</button>
+						</p>
+						<p class="title">整单折扣</p>
+						<p class="discount-item all-discount">
+							<button class="discount-btn">整单8折</button>
+							<button class="discount-btn">整单7折</button>
+							<button class="discount-btn">整单6折</button>
+							<button class="discount-btn">单品8折</button>
+							<button class="discount-btn">单品7折</button>
+							<button class="discount-btn">单品6折</button>
+							<button class="discount-btn">单品8折</button>
+							<button class="discount-btn">单品7折</button>
+							<button class="discount-btn">单品8折</button>
+							<button class="discount-btn">整单7折</button>
+						</p>
+					</div>
+				</div>
+				<!--数字键盘和付款方式-->
+				<div class="payment-bottom-wrapper col-md-12 col-sm-12 no-padding">
+					<div class="pay-keyboard-wrapper col-md-6 col-sm-6 no-padding">
+						<div class="pay-keyboard">
+							<span class="key">7</span>
+							<span class="key">8</span>
+							<span class="key">9</span>
+							<span class="key key-big">
+								<i class="iconfont icon-shanchu" style="font-size:36px"></i>
+							</span>
+							<span class="key">4</span>
+							<span class="key">5</span>
+							<span class="key">6</span>
+							<span class="key key-big">清除</span>
+							<span class="key">1</span>
+							<span class="key">2</span>
+							<span class="key">3</span>
+							<span class="key key-big">打印</span>
+							<span class="key">00</span>
+							<span class="key">.</span>
+							<span class="key">0</span>
+							<span class="key key-big btn-menu">继续点菜</span>
+						</div>
+					</div>
+					<div class="pay-type col-md-6 col-sm-6  no-padding">
+						<button class="pay-type-item">现金</button>
+						<button class="pay-type-item">银行卡</button>
+						<button class="pay-type-item" data-toggle="modal" data-target="#aliPayModal">支付宝</button>
+						<button class="pay-type-item">微信</button>
+						<button class="pay-type-item">优惠券</button>
+						<button class="pay-type-item" data-toggle="modal" data-target="#vipCardModal">会员卡</button>
+						<button class="pay-type-item">杉德支付</button>
+						<button class="pay-type-item">点评券</button>
+						<button class="pay-type-item">银联闪付</button>
+						<button class="pay-type-item">点评券1</button>
+						<button class="pay-type-item">银联闪付1</button>
+					</div>
+				</div>
+			</div>
+			<!--右边END-->
+		</div>
+		<footer class="footer">
+			<div class="col-md-3 col-sm-4 col-xs-4">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="col-md-4 col-sm-5 col-xs-5">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+		<!--modal 更多-->
+		<!--更多小费-->
+		<div class="modal fade" id="otherModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog delete-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">更多折扣</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn " data-dismiss="modal">确定</button>
+						<button type="button" class="btn ">退出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--更多单品折扣-->
+		<div class="modal fade" id="singleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog delete-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">更多折扣</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn " data-dismiss="modal">确定</button>
+						<button type="button" class="btn ">退出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--更多整单折扣-->
+		<div class="modal fade" id="allModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog delete-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">更多折扣</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn " data-dismiss="modal">确定</button>
+						<button type="button" class="btn ">退出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--更多付款方式-->
+		<div class="modal fade" id="payTypeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog delete-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">更多付款方式</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn " data-dismiss="modal">确定</button>
+						<button type="button" class="btn ">退出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--会员卡付款-->
+		<div class="modal fade" id="vipCardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog md-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">会员卡付款</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+						<div class="vip-wrapper">
+							<div class="money">应付&nbsp;29.00</div>
+							<ul class="nav nav-pills clearfloat">
+								<li class="tab-nav col-sm-4 no-padding active">
+									<a href="#tab1" data-toggle="tab" aria-expanded="true">读卡</a>
+								</li>
+								<li class="tab-nav col-sm-4 no-padding">
+									<a href="#tab2" data-toggle="tab" aria-expanded="false">扫码</a>
+								</li>
+								<li class="tab-nav col-sm-4 no-padding">
+									<a href="#tab3" data-toggle="tab">手机号</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div id="tab1" class="tab-pane active">
+									<div class="vip-input disabled">
+										<input type="" class="form-control" id="inputPassword3" placeholder="卡号" disabled="disabled">
+										<span>查询</span>
+									</div>
+									<div id="" class="vip-content clearfloat">
+										<span class="col-sm-6">卡号：3028768825</span>
+										<span class="col-sm-6">手机号：3028768825</span>
+										<span class="col-sm-6">会员姓名：张苏苏</span>
+										<span class="col-sm-6">类型：VIP金卡</span>
+										<span class="col-sm-6">余额：45325345.00</span>
+										<span class="col-sm-6">赠送余额：100</span>
+										<span class="col-sm-6 credits">
+											<label>
+												积分：768825
+      											<input type="checkbox">
+    											</label>
+										</span>
+										<span class="col-sm-6">会员折扣：0.7</span>
+										<span class="col-sm-12">积分规则：每10积分可兑换1元</span>
+										<div class="col-sm-12 coupon">
+											<label for="" class="control-label">会员券：</label>
+											<div class="">
+												<select name="" class="form-control">
+													<option value="" style="display: none;" disabled selected>请选择</option>
+													<option value="">啊啊啊</option>
+													<option value="">来来来</option>
+												</select>
+											</div>
+										</div>
+										<span class="col-sm-6">消费金额：45325345.00</span>
+										<span class="col-sm-6">折扣优惠：100</span>
+									</div>
+								</div>
+								<div id="tab2" class="tab-pane">
+									<div class="vip-input disabled">
+										<input type="" class="form-control" id="inputPassword3" placeholder="卡号" disabled="disabled">
+										<span>查询</span>
+									</div>
+									<div id="" class="vip-content clearfloat">
+										<span class="col-sm-6">卡号：3028768825</span>
+										<span class="col-sm-6">手机号：3028768825</span>
+										<span class="col-sm-6">会员姓名：张苏苏</span>
+										<span class="col-sm-6">类型：VIP金卡</span>
+										<span class="col-sm-6">余额：45325345.00</span>
+										<span class="col-sm-6">赠送余额：100</span>
+										<span class="col-sm-6 credits">
+											<label>
+												积分：768825
+      											<input type="checkbox">
+    											</label>
+										</span>
+										<span class="col-sm-6">会员折扣：0.7</span>
+										<span class="col-sm-12">积分规则：每10积分可兑换1元</span>
+										<div class="col-sm-12 coupon">
+											<label for="" class="control-label">会员券：</label>
+											<div class="">
+												<select name="" class="form-control">
+													<option value="" style="display: none;" disabled selected>请选择</option>
+													<option value="">啊啊啊</option>
+													<option value="">来来来</option>
+												</select>
+											</div>
+										</div>
+										<span class="col-sm-6">消费金额：45325345.00</span>
+										<span class="col-sm-6">折扣优惠：100</span>
+									</div>
+								</div>
+								<div id="tab3" class="tab-pane">
+									<div class="vip-input">
+										<input type="" class="form-control vip-key-input" id="inputPassword3" placeholder="卡号">
+										<span class="">查询</span>
+										<!--会员卡键盘-->
+										<div class="vip-keyboard">
+											<span class="key">1</span>
+											<span class="key">2</span>
+											<span class="key">3</span>
+											<span class="key">4</span>
+											<span class="key">5</span>
+											<span class="key">6</span>
+											<span class="key">7</span>
+											<span class="key">8</span>
+											<span class="key">9</span>
+											<span class="key">0</span>
+											<span class="key">.</span>
+											<span class="key btn-clear">清除</span>
+										</div>
+									</div>
+									<div id="" class="vip-content clearfloat">
+										<span class="col-sm-6">卡号：3028768825</span>
+										<span class="col-sm-6">手机号：3028768825</span>
+										<span class="col-sm-6">会员姓名：张苏苏</span>
+										<span class="col-sm-6">类型：VIP金卡</span>
+										<span class="col-sm-6">余额：45325345.00</span>
+										<span class="col-sm-6">赠送余额：100</span>
+										<span class="col-sm-6 credits">
+											<label>
+												积分：768825
+      											<input type="checkbox">
+    											</label>
+										</span>
+										<span class="col-sm-6">会员折扣：0.7</span>
+										<span class="col-sm-12">积分规则：每10积分可兑换1元</span>
+										<div class="col-sm-12 coupon">
+											<label for="" class="control-label">会员券：</label>
+											<div class="">
+												<select name="" class="form-control">
+													<option value="" style="display: none;" disabled selected>请选择</option>
+													<option value="">啊啊啊</option>
+													<option value="">来来来</option>
+												</select>
+											</div>
+										</div>
+										<span class="col-sm-6">消费金额：45325345.00</span>
+										<span class="col-sm-6">折扣优惠：100</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn " data-dismiss="modal">确认</button>
+						<button type="button" class="btn ">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--支付宝扫码付款-->	
+		<div class="modal fade" id="aliPayModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog md-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">支付宝扫码付款</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+						<div class="alipay-wrapper">
+							<div class="money">应付&nbsp;29.00</div>
+							<div class="scan-code">请扫描二维码</div>
+							<div class="read-qr-code">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn " data-dismiss="modal">确认</button>
+						<button type="button" class="btn ">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript">
+		// 打开键盘
+		$(document).on('click', '.vip-key-input', function() {
+			$(".vip-keyboard").toggleClass('on');
+		})
+		// 退出键盘
+		$(".keys").on('click', 'li', function() {
+			var $this = $(this);
+			var $txt = $this.text()
+			if($txt == '退出') {
+				$(".vip-keyboard").removeClass('on');
+			}
+		})
+	</script>
+</html>

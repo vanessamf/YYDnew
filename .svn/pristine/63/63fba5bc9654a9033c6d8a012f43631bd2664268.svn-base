@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>分单</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/menu.css" />
+		<link rel="stylesheet" href="../css/separateBills.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="tableList.html" class="back col-xs-1 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				（沁园春）分单
+			</div>
+			<span class="btn-exit">
+					<!--<i class="iconfont icon-shanjian01 large text-white"></i>-->
+			</span>
+		</header>
+		<div class="separateBills-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<div class="separateBills-container col-sm-12 no-padding clearfloat">
+				<div class="col-sm-4  no-padding bills-column">
+					<div class="column-title">
+						<div class="checkbox">
+							<label>
+      							<input type="checkbox"onclick="quanxuan(this)">
+      							<span data-name="4001">单号：04001</span>
+    							</label>
+						</div>
+					</div>
+					<div class="column-content">
+						<ul class="dish-list">
+							<li class="checkbox">
+								<label>
+										<input class="no-padding qx" type="checkbox" class="qx"> 
+										<span class="col-sm-3 no-padding">1</span>
+										<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+										<span class="col-sm-2 no-padding">10000</span>
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding qx" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">2</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+						</ul>
+					</div>
+					<div class="column-paging clearfloat" style="visibility: hidden;">
+						<span class="col-sm-6 prev-btn col-xs-6 btn-grey" onclick="prevPage(this)">上一页</span>
+						<span class="col-sm-6 next-btn col-xs-6" onclick="nextPage(this)">下一页</span>
+					</div>
+					<div class="column-footer">总价：30.00</div>
+				</div>
+				<div class="col-sm-4  no-padding bills-column">
+					<div class="column-title">
+						<div class="checkbox">
+							<label>
+      							<input type="checkbox"onclick="quanxuan(this)">
+      							单号：04002
+    							</label>
+						</div>
+						<i class="iconfont icon-guanbi" onclick="closeSubBill(this)"></i>
+					</div>
+					<div class="column-content">
+						<ul class="dish-list">
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox"> 
+											<span class="col-sm-3 no-padding">1</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox"> 
+											<span class="col-sm-3 no-padding">2</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+						</ul>
+					</div>
+					<div class="column-paging clearfloat" style="visibility: hidden;">
+						<span class="col-sm-6 prev-btn col-xs-6 btn-grey" onclick="prevPage(this)">上一页</span>
+						<span class="col-sm-6 next-btn col-xs-6" onclick="nextPage(this)">下一页</span>
+					</div>
+					<div class="column-footer">总价：30.00</div>
+				</div>
+				<div class="col-sm-4  no-padding bills-column">
+					<div class="column-title">
+						<div class="checkbox">
+							<label>
+      							<input type="checkbox"onclick="quanxuan(this)">
+      							单号：04003
+    							</label>
+						</div>
+						<i class="iconfont icon-guanbi"onclick="closeSubBill(this)"></i>
+					</div>
+					<div class="column-content">
+						<ul class="dish-list">
+							
+						</ul>
+					</div>
+					<div class="column-paging clearfloat" style="visibility: hidden;">
+						<span class="col-sm-6 prev-btn col-xs-6 btn-grey" onclick="prevPage(this)">上一页</span>
+						<span class="col-sm-6 next-btn col-xs-6" onclick="nextPage(this)">下一页</span>
+					</div>
+					<div class="column-footer">总价：30.00</div>
+				</div>
+				<div class="col-sm-4  no-padding bills-column">
+					<div class="column-title">
+						<div class="checkbox">
+							<label>
+      							<input type="checkbox"onclick="quanxuan(this)">
+      							单号：04004
+    							</label>
+						</div>
+						<i class="iconfont icon-guanbi"onclick="closeSubBill(this)"></i>
+					</div>
+					<div class="column-content">
+						<ul class="dish-list">
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">2</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+							<li class="checkbox">
+								<label>
+											<input class="no-padding" type="checkbox" class="qx"> 
+											<span class="col-sm-3 no-padding">1/3</span>
+											<span class="col-sm-6 no-padding">蒸菜系列afsfds做法</span>
+											<span class="col-sm-2 no-padding">10000</span>
+									</label>
+							</li>
+						</ul>
+					</div>
+					<div class="column-paging clearfloat" style="visibility: hidden;">
+						<span class="col-sm-6 prev-btn col-xs-6 btn-grey" onclick="prevPage(this)">上一页</span>
+						<span class="col-sm-6 next-btn col-xs-6" onclick="nextPage(this)">下一页</span>
+					</div>
+					<div class="column-footer">总价：30.00</div>
+				</div>
+			</div>
+			<div class="separateBills-footer col-sm-12 no-padding clearfloat">
+				<span class="col-sm-1-5" onclick="addSubBill()">新建</span>
+				<span class="col-sm-1-5">保存</span>
+				<span class="col-sm-1-5" data-toggle="modal" data-target="#addNewBillModal">一键分单</span>
+				<span class="col-sm-1-5">取消</span>
+				<span class="col-sm-1-5" data-toggle="modal" data-target="#billListModal">账单列表</span>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="col-md-3 col-sm-4 col-xs-4">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="col-md-4 col-sm-5 col-xs-5">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+		<!--弹窗-->
+		<!--账单列表-->
+		<div class="modal fade" id="billListModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog sm-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">账单列表</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+						<div class="bill-list-container">
+							<div>先选菜品再选对应账单</div>
+							<ul>
+								<li class="checkbox">
+									<label>
+										<input class="" type="checkbox" class=""> 
+										<span class=""data-name="4001">04001</span>
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input class="" type="checkbox" class=""> 
+										<span class="">04002</span>
+									</label>
+								</li>
+								<li class="checkbox">
+									<label>
+										<input class="" type="checkbox" class=""> 
+										<span class="">04003</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="modal-footer no-border">
+						<button type="button" class="btn ">确定</button>
+						<button type="button" class="btn " data-dismiss="modal">退出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/dialog.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			//			$(".btn-warning").click(function() {
+			//				window.location.href = "payment.html";
+			//			})
+			promptDialog("addNewBillModal", "提示", "请添加新账单！", "300px");
+			promptDialog("addNewDishModal", "提示", "请添加新菜品！", "300px");
+		})
+		//删除新的分单
+		function closeSubBill(_this) {
+			$(_this).parents(".bills-column").remove();
+		}
+		//新增新的分单
+		function addSubBill() {
+			var html = '';
+			html += '<div class="col-sm-4  no-padding bills-column">';
+			html += '<div class="column-title">';
+			html += '<div class="checkbox">';
+			html += '<label><input type="checkbox"onclick="quanxuan(this)">单号：04003</label>';
+			html += '</div><i class="iconfont icon-guanbi"onclick="closeSubBill(this)"></i></div>';
+			html += '<div class="column-content"><ul class="dish-list"></ul></div>';
+			html += '<div class="column-paging clearfloat" style="visibility: hidden;">';
+			html += '<span class="col-sm-6 prev-btn col-xs-6 btn-grey" onclick="prevPage(this)">上一页</span>';
+			html += '<span class="col-sm-6 next-btn col-xs-6" onclick="nextPage(this)">下一页</span>';
+			html += '</div>';
+			html += '<div class="column-footer">总价：30.00</div>';
+			html += '</div>';
+			$(".separateBills-container ").append(html);
+		}
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			btnToggle();
+		})
+		window.onresize = function() {
+			btnToggle();
+		}
+		//翻页按钮初始化
+		function btnToggle() {
+			var minHeight = $(".column-content").eq(0).height();
+			var allUl = $(".column-content ul"); //实际的ul
+			for(var i = 0; i < allUl.length; i++) {
+				var curBox = $(".column-content").eq(i);
+				var translateHeight = curBox.height();
+				var index = Math.ceil(curBox.scrollTop() / translateHeight);
+				var totalHeight = curBox.find("ul").height();
+				var maxIndex = Math.ceil(totalHeight / translateHeight);
+				if(allUl.eq(i).height() <= minHeight) {
+					$(".column-paging").eq(i).css("visibility", "hidden");
+				} else {
+					$(".column-paging").eq(i).css("visibility", "visible");
+					if(index == maxIndex - 1) {
+						$(".column-paging").eq(i).find(".next-btn").addClass("btn-grey");
+					} else if(index == 0) {
+						$(".column-paging").eq(i).find(".prev-btn").addClass("btn-grey");
+					} else {
+						$(".column-paging").eq(i).find(".next-btn").removeClass("btn-grey");
+						$(".column-paging").eq(i).find(".prev-btn").removeClass("btn-grey");
+					}
+				}
+			}
+		}
+		//下一页
+		function nextPage(_this) {
+			var curBox = $(_this).parents(".column-paging").prev(".column-content");
+			var translateHeight = curBox.height();
+			var index = Math.ceil(curBox.scrollTop() / translateHeight);
+			var totalHeight = curBox.find("ul").height();
+			var maxIndex = Math.ceil(totalHeight / translateHeight);
+			if(index == maxIndex - 1) {} else if(index < maxIndex - 1) {
+				index++;
+				if(index == maxIndex - 1) {
+					$(_this).addClass("btn-grey");
+				}
+				curBox.animate({
+					scrollTop: translateHeight * index
+				}, 300);
+			}
+			$(_this).parent(".column-paging").children(".prev-btn").removeClass("btn-grey");
+		}
+		//上一页
+		function prevPage(_this) {
+			var curBox = $(_this).parents(".column-paging").prev(".column-content");
+			var translateHeight = curBox.height();
+			var index = Math.ceil(curBox.scrollTop() / translateHeight);
+			var totalHeight = curBox.find("ul").height();
+			var maxIndex = Math.ceil(totalHeight / translateHeight);
+			if(index == 0) {} else if(index >= 1) {
+				index--;
+				if(index == 0) {
+					$(_this).addClass("btn-grey");
+				}
+				curBox.animate({
+					scrollTop: translateHeight * index
+				}, 300);
+			}
+			$(_this).parent(".column-paging").children(".next-btn").removeClass("btn-grey");
+		}
+		//check
+		$(document).ready(function() {
+			$(".checkbox").on("click", "input[type='checkbox']", function(e) {
+				if($(this).is(':checked')) {
+					$(this).parent("label").addClass("checked");
+				} else {
+					$(this).parent("label").removeClass("checked");
+				}
+			});
+		});
+
+//		function isChecked() {
+//			var checkList = $(".checkbox");
+//			for(var i = 0; i < checkList.length; i++) {
+//				if(checkList.eq(i).find("input[type='checkbox']").is(':checked')) {
+//					checkList.eq(i).find("label").addClass("checked");
+//				} else {
+//					checkList.eq(i).find("label").removeClass("checked");
+//				}
+//			}
+//		}  
+		//全选
+		function quanxuan(_this) {
+			//选中某一列里面的菜品时，取消另外几列的选中
+			$(_this).parents(".bills-column").siblings(".bills-column").find("input[type='checkbox']").prop("checked", false);
+			$(_this).parents(".bills-column").siblings(".bills-column").find("label").removeClass("checked");
+			//全选
+			var ck = $(_this).parents(".bills-column").find(".column-content input[type='checkbox']");
+			if(ck.length==0){
+				if(_this.checked) {
+					$(_this).parent("label").addClass("checked");
+				} else {
+					$(_this).parent("label").removeClass("checked");
+				}
+			}else{
+				for(var i = 0; i < ck.length; i++) {
+				if(_this.checked) {
+					ck.eq(i).prop("checked", true);
+					ck.eq(i).parent("label").addClass("checked");
+					$(_this).parent("label").addClass("checked");
+				} else {
+//					ck.eq(i).removeAttr("checked");
+					ck.eq(i).prop("checked", false);
+					ck.eq(i).parent("label").removeClass("checked");
+					$(_this).parent("label").removeClass("checked");
+				}
+			}
+			}
+			
+		}
+		
+		$(document).ready(function() {
+			//当子元素都选全选选中，其中一个不选取消全选
+			$(".column-content .checkbox").on("click", "input[type='checkbox']", function(e) {
+				//选中某一列里面的菜品时，取消另外几列的选中
+				$(this).parents(".bills-column").siblings(".bills-column").find("input[type='checkbox']").prop("checked", false);
+				$(this).parents(".bills-column").siblings(".bills-column").find("label").removeClass("checked");
+				var flage1 = true;
+				var subItem = $(this).parents(".column-content").find("input[type=checkbox]");
+				var supItem = $(this).parents(".bills-column").find(".column-title input[type='checkbox']");
+				if($(this).is(':checked')) {
+					$(this).parent("label").addClass("checked");
+				} else {
+					$(this).parent("label").removeClass("checked");
+				}
+				for(var i = 0; i < subItem.length; i++) {
+					if(!(subItem.eq(i).is(":checked"))) {
+						flage1 = false;
+						break;
+					} else {
+						flage1 = true;
+					}
+				}
+				supItem.prop("checked", flage1);
+				if(flage1 == true) {
+					supItem.parent("label").addClass("checked");
+				} else{
+					supItem.parent("label").removeClass("checked");
+				}
+			});
+		});
+		
+		$('#billListModal').on('show.bs.modal', function (e) {
+			var ckAll=$(".bills-column").find("input[type='checkbox']");
+			var billList=$(".bill-list-container li");
+			var flage = false;
+			var columnName="";
+//			debugger;
+			for(var i = 0; i < ckAll.length; i++) {
+				if(ckAll.eq(i).is(":checked")) {
+					flage = true;
+					columnName=ckAll.eq(i).parents(".bills-column").find(".column-title span").attr("data-name");
+					break;
+				} else {
+					flage = false;
+				}
+			}
+			
+			for(var j=0;j<billList.length;j++){
+//				debugger;
+				if(columnName==undefined){
+					continue;
+				}else if(billList.eq(j).find("span").attr("data-name")==columnName){
+					billList.eq(j).find("label").addClass("checked");
+					billList.eq(j).find("input[type='checkbox']").prop("checked", true);
+					billList.eq(j).find("input[type='checkbox']").prop("disabled", "disabled");
+				}
+			}
+		})
+	</script>
+</html>

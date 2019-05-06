@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>系统设置-商户信息</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-switch.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/systemSetting.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="tableList.html" class="back col-xs-1 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				本机设置
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="system-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="system-left col-md-2 col-sm-2 col-lg-2 no-padding">
+				<ul class="left-menu">
+					<li id="shanghuSetting.html">
+						<i class="iconfont icon-shanghurenzheng"></i> 商户信息
+					</li>
+					<li id="printSetting.html">
+						<i class="iconfont icon-dayin1"></i> 打印设置
+					</li>
+					<li id="monitoringSetting.html">
+						<i class="iconfont icon-jiankong1"></i> 厨房监控设置
+					</li>
+					<li id="funcSetting.html">
+						<i class="iconfont icon-rili3"></i> 功能设置
+					</li>
+					<li id="AccountSetting.html">
+						<i class="iconfont icon-wallet"></i> 账户管理
+					</li>
+					<li id="outerScreenSetting.html">
+						<i class="iconfont icon-computer"></i> 外屏设置
+					</li>
+					<li id="msgCenter.html">
+						<i class="iconfont icon-tubiao15"></i> 消息中心
+					</li>
+					<li id="pwdSetting.html">
+						<i class="iconfont icon-jianpan3"></i> 修改密码
+					</li>
+					<li class="active">
+						<i class="iconfont icon-more"></i> 本机设置
+					</li>
+				</ul>
+			</div>
+			<!--左边END-->
+
+			<!--右边-->
+			<div class="system-right col-md-10 col-sm-10 col-lg-10 no-padding">
+				<div class="right-content">
+					<div class="more-wrapper">
+						<ul class="more-content">
+							<li>
+								<sapn>启用叫号</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>启用外卖外界单</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>启用微信外界单</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>自动接单</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>营业开市</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>启用协议单位</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>启用预定</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>快点</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>多点</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+							<li>
+								<sapn>启用电子秤</sapn>
+								<input name="status" type="checkbox" checked="checked">
+							</li>
+						</ul>
+						<div class="more-bottom">
+							<div class="checkbox">
+								<label>
+    									<input type="checkbox" value="">
+    									<span>是否允许手工输入数量</span>
+  								</label>
+							</div>
+							<div class="mb-list clearfloat">
+								<div class="mb-item">
+									<label class="pull-left">类型：</label>
+									<div class="">
+										<select class="form-control pull-left">
+											<option value="">
+												顶尖一体秤
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="mb-item">
+									<label class="pull-left">端口号：</label>
+									<div class="">
+										<select class="form-control pull-left">
+											<option value="">
+												COM4
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="mb-item">
+									<label class="pull-left">波特率：</label>
+									<div class="">
+										<select class="form-control pull-left">
+											<option value="">
+												9600
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--左边END-->
+		</div>
+		<footer id="footer"class="footer">
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.left-menu li').click(function(e) {
+				window.location.href = e.target.id;
+			})
+		})
+		$('[name="status"]').bootstrapSwitch({
+			onText: "开",
+			offText: "关",
+			onColor: "info",
+			offColor: "info",
+			size: "large",
+			//			animate:false,
+			onSwitchChange: function(event, state) {
+				if(state == true) {
+					$(this).val("1");
+				} else {
+					$(this).val("2");
+				}
+			}
+		});
+	</script>
+
+</html>

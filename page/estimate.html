@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>沽清</title>
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/menu.css" />-->
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="javascript:void(0);" class="back col-xs-2 no-padding" onclick="javascript:history.back(-1);">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div class="col-xs-8 title">
+				沽清
+			</div>
+			<div class="nav col-xs-2">
+				<span class="nav-item">同步售罄</span>
+			</div>
+			<span class="btn-exit">
+					<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="main-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="order-wrapper estimate-left col-md-4 col-sm-5 col-lg-3 no-padding">
+				<div class="order-title">
+					<span class="col-xs-2  col-sm-2">序号</span>
+					<span class="col-xs-4  col-sm-4">品名</span>
+					<span class="col-xs-2  col-sm-2">可售数</span>
+					<span class="col-xs-4  col-sm-4 ta-c">操作</span>
+				</div>
+				<div class="order-content">
+					<ul>
+						<li class="oc-item">
+							<div class="item-wrapper">
+								<div class="clearfloat item-content">
+									<span class="col-xs-2  col-sm-2 ">
+										1
+									</span>
+									<span class="col-xs-4 col-sm-4">刀拍黄瓜</span>
+									<span class="col-xs-2 col-sm-2">18份</span>
+									<span class="col-xs-4 col-sm-4">
+										<a href=""class="col-xs-6 col-sm-6 no-padding"data-toggle="modal" data-target="#amountEnterModal">修改</a>
+										<a href=""class="col-xs-6 col-sm-6 no-padding">删除</a>
+									</span>
+								</div>
+							</div>
+							<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-xs-2 col-sm-2"></span>
+									<span class="col-xs-4 col-sm-4 pl5">花生米米米米米花花花</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-xs-2 col-sm-2"></span>
+									<span class="col-xs-4 col-sm-4 pl10">油炸油炸油炸油炸油炸</span>
+								</li>
+							</ul>
+						</li>
+						<li class="oc-item">
+							<div class="item-wrapper">
+								<div class="clearfloat item-content">
+								<span class="col-xs-2  col-sm-2 ">
+									2
+								</span>
+								<span class="col-xs-4 col-sm-4">刀拍黄瓜</span>
+								<span class="col-xs-2 col-sm-2">18份</span>
+								<span class="col-xs-4 col-sm-4">
+									<a href=""class="col-xs-6 col-sm-6 no-padding"data-toggle="modal" data-target="#amountEnterModal">修改</a>
+									<a href=""class="col-xs-6 col-sm-6 no-padding">删除</a>
+								</span>
+							</div>
+							</div>
+							<ul class="oc-sub-item">
+								<li class="clearfloat">
+									<span class="col-xs-2 col-sm-2"></span>
+									<span class="col-xs-4 col-sm-4 pl5">花生米米米米米花花花</span>
+								</li>
+								<li class="clearfloat">
+									<span class="col-xs-2 col-sm-2"></span>
+									<span class="col-xs-4 col-sm-4 pl10">油炸油炸油炸油炸油炸</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="order-footer">
+					<span class="col-sm-6 col-xs-6">上一页</span>
+					<span class="col-sm-6 col-xs-6">下一页</span>
+				</div>
+			</div>
+			<!--左边END-->
+
+			<!--右边·桌台-->
+			<div class="menu-wrapper col-md-8 col-sm-7 col-lg-9 no-padding">
+				<!--分类选项卡-->
+				<div class="room-tab">
+					<ul class="nav nav-pills clearfloat">
+						<li class="tab-nav qb active">
+							<a href="#all" data-toggle="tab">全部</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#baoxiang" data-toggle="tab">包厢</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#yilou" data-toggle="tab">一楼大厅</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#erlou" data-toggle="tab">二楼大厅</a>
+						</li>
+						<li class="tab-nav">
+							<a href="" data-toggle="tab">三楼大厅</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#" data-toggle="tab">四楼大厅</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#" data-toggle="tab">五楼大厅啊啊是发是否是发</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#" data-toggle="tab">六楼大厅</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#" data-toggle="tab">四楼大厅</a>
+						</li>
+						<li class="tab-nav page-turn">
+							<!--<a href="" class="arrow btn-rooms-prev">
+								<i class="iconfont icon-page-prev"></i>
+							</a>-->
+							<a href="" class="arrow btn-rooms-next">
+								下一页
+								<!--<i class="iconfont icon-page-next"></i>-->
+							</a>
+						</li>
+					</ul>
+					<!--<div class="pull-right text-right" style="width:30%">
+						<i class="iconfont icon-iconset0433 text-white btn-rooms-prev h1"></i>
+						<i class="iconfont icon-iconset0434 text-white btn-rooms-next h1" style="margin-left: 10%"></i>
+					</div>-->
+					<ul class="nav nav-pills sub-nav clearfloat">
+						<li class="tab-nav sub-tab-nav">
+							<a href="#all1" data-toggle="tab">全部2级菜单</a>
+						</li>
+						<li class="tab-nav sub-tab-nav">
+							<a href="#all2" data-toggle="tab">包厢2</a>
+						</li>
+						<li class="tab-nav sub-tab-nav">
+							<a href="#all3" data-toggle="tab">一楼大厅2</a>
+						</li>
+						<li class="tab-nav sub-tab-nav page-turn">
+							<a href="" class="arrow btn-rooms-next">
+								下一页
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--菜品-->
+				<div class="tab-content menu-content">
+					<ul id="all" class="tab-pane active menu-list clearfloat">
+						<div class="tab-content menu-content">
+							<ul id="all1" class="tab-pane active">
+								<li class="ml-item active">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+									</p>
+									<i class="num">18</i>
+								</li>
+								<li class="ml-item active">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+									</p>
+									<i class="sale-over"></i>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+											油炸花生米
+										</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+							</ul>
+							<ul id="all2" class="tab-pane active">
+								<li class="ml-item active">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item active">
+									<p class="ml-item-name">
+										<span id="">
+										油炸花生米
+									</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+							</ul>
+							<ul id="all3" class="tab-pane active">
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+								<li class="ml-item">
+									<p class="ml-item-name">
+										<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+									</p>
+									<p class="ml-item-price">
+										<span>8元/份</span>
+
+									</p>
+								</li>
+							</ul>
+						</div>
+					</ul>
+					<ul id="baoxiang" class="tab-pane  menu-list clearfloat">
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								油炸花生米
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								油炸花生米
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								油炸花生米
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								油炸花生米
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								油炸花生米
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								油炸花生米梅干菜扣肉油炸花生米
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								油炸花生米
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+					</ul>
+					<ul id="yilou" class="tab-pane menu-list clearfloat">
+						<li class="ml-item active">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+
+					</ul>
+					<ul id="erlou" class="tab-pane  menu-list clearfloat">
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+						<li class="ml-item">
+							<p class="ml-item-name">
+								<span id="">
+									油炸花生米梅干菜扣肉油炸花生米
+								</span>
+							</p>
+							<p class="ml-item-price">
+								<span>8元/份</span>
+
+							</p>
+						</li>
+					</ul>
+				</div>
+				<!--底部-->
+				<div class="menu-other">
+					<div class="col-sm-12 no-padding">
+							<div class="col-sm-5 search-bar">
+								<div class="search-int">
+									<a href="" class="search">
+										<i class="iconfont icon-sousuo"></i>
+									</a>
+									<input type="" name="" id="" value="" placeholder="请输入菜名" />
+									<button class="btn-keyboard">软键盘</button>
+								</div>
+							</div>
+							<div class="col-sm-7 no-padding">
+								<span class="col-sm-6">上一页</span>
+								<span class="col-sm-6">下一页</span>
+							</div>
+					</div>
+				</div>
+			</div>
+			<!--右边END-->
+		</div>
+		<footer id="footer"class="footer">
+		</footer>
+		<!--modal-->
+		<!--修改-->
+		<div class="modal fade" id="amountEnterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog xsmd-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">东吴焖肉/数量</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+						<div class="cook-type-container cash-container">
+							<div class="cash-input">
+								<input type="" class="form-control" id="inputPassword3" placeholder="">
+								<i class="iconfont icon-guanbi"></i>
+							</div>
+							<div class="keyboard">
+								<span class="key">1</span>
+								<span class="key">2</span>
+								<span class="key">3</span>
+								<span class="key">4</span>
+								<span class="key">5</span>
+								<span class="key">6</span>
+								<span class="key">7</span>
+								<span class="key">8</span>
+								<span class="key">9</span>
+								<span class="key">0</span>
+								<span class="key">.</span>
+								<span class="key btn-clear">清除</span>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer no-border">
+						<button type="button" class="btn ">确定</button>
+						<button type="button" class="btn " data-dismiss="modal">退出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/dialog.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".btn-warning").click(function() {
+				window.location.href = "payment.html";
+			})
+			var menuContentHeight = $(".menu-wrapper").height() - $(".menu-wrapper .room-tab").height() - $(".menu-wrapper .menu-other").height();
+			$(".menu-wrapper .menu-content").height(menuContentHeight);
+		})
+		scrollWidth1(0, "order-title", "order-content");
+		scrollWidth1(0, "room-tab", "tab-content>ul");
+	</script>
+</html>

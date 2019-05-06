@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>中餐首页</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/tableList.css" />-->
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<header id="menu_header"  class="header">
+			<div class="logo col-xs-2">
+				<img class="" src="../images/logo.png" alt="">
+			</div>
+			<div class="nav col-xs-10">
+				<span class="nav-item">预定</span>
+				<span class="nav-item">叫号</span>
+				<span class="nav-item">外接单</span>
+				<span class="nav-item">反结算</span>
+				<span class="nav-item">沽清</span>
+				<span class="nav-item">会员</span>
+				<span class="nav-item">更多功能</span>
+				<!--<span class="nav-item btn-exit">
+					<i class="iconfont icon-shanjian01 large text-white"></i>
+				</span>-->
+			</div>
+		</header>
+		<div class="main-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边·桌台-->
+			<div class="desk-wrapper col-md-8 col-sm-8 col-lg-9 no-padding">
+				<!--分类选项卡-->
+				<div class="room-tab">
+					<ul class="nav nav-pills clearfloat">
+						<li class="tab-nav active">
+							<a href="#all" data-toggle="tab">全部</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#baoxiang" data-toggle="tab">包厢</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#yilou" data-toggle="tab">一楼大厅</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#erlou" data-toggle="tab">二楼大厅</a>
+						</li>
+						<li class="tab-nav page-turn">
+							<a href="" class="arrow btn-rooms-prev">
+								<i class="iconfont icon-page-prev"></i>
+							</a>
+							<a href="" class="arrow btn-rooms-next">
+								<i class="iconfont icon-page-next"></i>
+							</a>
+						</li>
+					</ul>
+					<!--<div class="pull-right text-right" style="width:30%">
+						<i class="iconfont icon-iconset0433 text-white btn-rooms-prev h1"></i>
+						<i class="iconfont icon-iconset0434 text-white btn-rooms-next h1" style="margin-left: 10%"></i>
+					</div>-->
+				</div>
+				<!--桌台-->
+				<div class="tab-content">
+					<ul id="all" class="tab-pane active desks clearfloat">
+						<li class="desk-item guest col-sm-1-7">
+							<h3>A001</h3>
+							<p>￥88.00</p>
+							<p>1/4人</p>
+							<p>12:00(7分钟)</p>
+						</li>
+						<li class="desk-item active col-sm-1-7">A001</li>
+						<li class="desk-item guest reserve-btn col-sm-1-7">
+							<h3>A001</h3>
+							<p>￥88.00</p>
+							<p>1/4人</p>
+							<p>12:00(7分钟)</p>
+							<span class="badge">
+							</span>
+							<span class="badge-text">
+									预
+							</span>
+						</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item ">A004</li>
+						<li class="desk-item ">A005</li>
+						<li class="desk-item ">A006</li>
+						<li class="desk-item ">A007</li>
+						<li class="desk-item ">A008</li>
+						<li class="desk-item ">A009</li>
+						<li class="desk-item ">A010</li>
+						<li class="desk-item ">A002</li>
+						<li class="desk-item ">A003</li>
+						<li class="desk-item ">A002</li>
+						<li class="desk-item ">A003</li>
+						<li class="desk-item ">A004</li>
+						<li class="desk-item ">A005</li>
+						<li class="desk-item ">A006</li>
+						<li class="desk-item ">A007</li>
+						<li class="desk-item ">A008</li>
+						<li class="desk-item ">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+					</ul>
+					<ul id="baoxiang" class="tab-pane  desks clearfloat">
+						<li class="desk-item guest reserve-btn">
+							<h3>A001</h3>
+							<p>￥88.00</p>
+							<p>1/4人</p>
+							<p>12:00(7分钟)</p>
+						</li>
+						<li class="desk-item active">A001</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item">A004</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A004</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+					</ul>
+					<ul id="yilou" class="tab-pane desks clearfloat">
+						<li class="desk-item active">A001</li>
+						<li class="desk-item">A004</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item">A004</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+					</ul>
+				</div>
+				<!--数量统计-->
+				<div class="desk-tips">
+					<div class="col-xs-10">
+						<div class="">
+							<span class="flex text-using"><i class="iconfont icon-yuandian"></i> 已点</span>
+							<span class="flex text-usedTime"><i class="iconfont icon-yuandian"></i> 0.5小时</span>
+						</div>
+						<div class="">
+							<span class="flex text-num">全部88桌</span>
+							<span class="flex text-num">已开3桌</span>
+							<span class="flex text-num">未开85桌</span>
+						</div>
+					</div>
+					<div class="">
+						<!--向上-->
+						<span class="">
+							<i class="iconfont icon-icon_shangyipian" ></i>
+						</span>
+						<!--向下-->
+						<span class="">
+							<i class="iconfont icon-icon_xiayipian"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!--右边-->
+			<div class="command-wrapper col-md-4 col-sm-4 col-lg-3 no-padding">
+				<div class="search-bar">
+					<div class="search-int"><input type="search"value="1"></div>
+					<span class="h5">用餐人数</span>
+				</div>
+				<div class="keyboard-container">
+					<div class="keyboard">
+						<span class="key">7</span>
+						<span class="key">8</span>
+						<span class="key">9</span>
+						<span class="key">4</span>
+						<span class="key">5</span>
+						<span class="key">6</span>
+						<span class="key">1</span>
+						<span class="key">2</span>
+						<span class="key">3</span>
+						<span class="key"><i class="iconfont icon-shanchu" style="font-size:40px"></i></span>
+						<span class="key">0</span>
+						<span class="key btn-clear">清除</span>
+					</div>
+					<div class="btn-wrapper">
+						<div class="menu">
+							<p class="key flex btn-order">开单</p>
+							<p class="key flex btn-lading-bill"data-toggle="modal" data-target="#ladingBillModal">提单</p>
+						</div>
+						<div class="menu btn-warning ">
+							<p class="btn-pay">付款</p>
+						</div>
+						<!--<div class="menu" style="border:solid 2px #3596ca;margin :-2px 0">-->
+						<!--<button type="button" class="menu btn btn-warning btn-pay">
+							付款
+						</button>-->
+						<!--</div>-->
+						<div class="menu">
+							<p class="key flex btn-split-table"data-toggle="modal" data-target="#splitTableModal">分合桌</p>
+							<p class="key flex btn-change-desk"data-toggle="modal" data-target="#changeTableModal">换桌</p>
+							<!--<p class="key flex">清桌</p>-->
+						</div>
+						<div class="menu" style="margin-top:-2px">
+							<p class="key flex">客用单</p>
+							<!--<p class="key flex">合单</p>-->
+							<p class="key flex">登出</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--右边END-->
+		</div>
+		<footer id="footer"class="footer">
+		</footer>
+		<!--弹窗-->
+		<!--提单-->
+		<div class="modal fade" id="ladingBillModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+			<div class="modal-dialog lg-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">【A002】提单</h4>
+					</div>
+					<div class="modal-body  no-padding clearfloat">
+						<form class="form-horizontal dish-form clearfloat">
+										<div class="col-sm-5 no-padding">
+											<div class="sup-dish-container ladingBill-container col-sm-12 no-padding">
+													<div class="sup-dish-title">
+														<span class="col-sm-3">单号</span>
+														<span class="col-sm-3">金额</span>
+														<span class="col-sm-6">时间</span>
+													</div>
+													<ul class="dish-list sup-dish-list">
+														<li>
+	        													<span class="col-sm-3">B001</span>
+															<span class="col-sm-3">37.00</span>
+															<span class="col-sm-6">12:10(10分钟)</span>
+														</li>
+													</ul>
+												<div class="sup-dish-footer clearfloat">
+													<span class="col-sm-6 sup-prev  col-xs-6">上一页</span>
+													<span class="col-sm-6 sup-next col-xs-6">下一页</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-7 no-padding">
+											<div class="sup-dish-container sub-dish-container">
+												<div class="sup-dish-title clearfloat">
+													<span class="col-xs-6  col-sm-6">菜品名称</span>
+													<span class="col-xs-3  col-sm-3">数量</span>
+													<span class="col-xs-3  col-sm-3">单价</span>
+												</div>
+												<ul class="dish-list sub-dish-list">
+													<li class="clearfloat">
+														<span class="col-xs-6 col-sm-6">蒜蓉qwrsdfsqwrqw茄子</span>
+														<span class="col-xs-3 col-sm-3">X121</span>
+														<span class="col-xs-3 col-sm-3">15.00</span>
+													</li>
+												</ul>
+												<div class="sup-dish-footer">
+													<span class="col-sm-6 col-xs-6 sub-prev">上一页</span>
+													<span class="col-sm-6 col-xs-6 sub-next">下一页</span>
+												</div>
+											</div>
+										</div>
+										</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn " data-toggle="modal" data-target="#noBillNumModal">确定</button>
+						<button type="button" class="btn " >打印</button>
+						<button type="button" class="btn "data-dismiss="modal">退出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--分合桌-->
+		<div class="modal fade" id="splitTableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+			<div class="modal-dialog lg-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">分合桌</h4>
+					</div>
+					<div class="modal-body  no-padding clearfloat">
+						<div class="splitTable-wrapper col-sm-12 clearfloat">
+							<div class="splitTable-column col-sm-5">
+								<div class="search-wrapper">
+									<label for="" class="">桌台：</label>
+									<input type="" class="form-control" id="inputPassword3" placeholder="请输入桌台号">
+									<i class="iconfont icon-guanbi"></i>
+								</div>
+								<div class="table-wrapper">
+									<div class="title">桌台名称</div>
+									<ul>
+										<li class="active">B007</li>
+										<li>C007</li>
+										<li>A007</li>
+									</ul>
+								</div>
+							</div>
+							<div  class="splitTable-btn col-sm-2">
+								<span>并入&nbsp;&gt;</span>
+								<span>&lt;&nbsp;拆分</span>
+							</div>
+							<div class="splitTable-column col-sm-5">
+								<div class="search-wrapper">
+									<label for="" class="">并入桌台：</label>
+									<span>C013</span>
+								</div>
+								<div class="table-wrapper">
+									<div class="title">桌台名称</div>
+									<ul>
+										<li>D007</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn " data-dismiss="modal">确定</button>
+						<button type="button" class="btn ">退出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--预订信息-->
+		<div class="modal fade in" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+			<div class="modal-dialog md-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">提示</h4>
+					</div>
+					<div class="modal-body  clearfloat">
+						<div class="reserve-container">
+							<p class="">张先生</p>
+							<p class="">人数：5</p>
+							<p class="">12:00</p>
+							<p class="">139000229875</p>
+						</div>
+					</div>
+					<div class="modal-footer no-border">
+						<button type="button" class="btn">散户开台</button>
+						<button type="button" class="btn">抵达</button>
+						<button type="button" class="btn" data-dismiss="modal">取消预定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/dialog.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			promptDialog("changeTableModal","提示","请选择要换桌的桌位！","300px");
+			promptDialog("noBillNumModal","提示","请选择单号！","300px");
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			$(".btn-order").click(function() {
+				window.location.href = "menu.html";
+			})
+			$(".btn-pay").click(function() {
+				window.location.href = "payment.html";
+			})
+		})
+		$(".reserve-btn").on("click", function() {
+			$("#reserveModal").modal('show');
+		});
+			//分合桌
+		$(".splitTable-wrapper ul li").on("click", function() {
+			$(this).toggleClass("active");
+		})
+		$(document).ready(function() {
+			init();
+		});
+		var tabNavList = $(".tab-nav");
+		var pageTurn = $(".page-turn");
+
+		function init() {
+			var tH = $(".desk-item").outerWidth();
+			var c = "width:" + tH + "px;"
+			//			$(".tab-nav").attr("style", c);
+			$(".pull-right").attr("style", c);
+
+			var d = "width:" + tH * 6 + "px;"
+
+			//			if(tabNavList.length > 5) {
+			//				$(".tab-nav-wrapper").attr("style", d);
+			//				pageTurn.show();
+			//			} else {
+			//              pageTurn.hide();
+			//			}
+		}
+
+		var width = $(".desk-item").outerWidth() * 6;
+		var tabNavWrapper = $(".tab-nav-wrapper");
+		var tabNav = $(".tab-nav");
+		var addTransition = function() {
+			tabNav.css('transition', 'all 0.2s');
+			tabNav.css('webkitTransition', 'all 0.2s');
+		}
+		var setTranslateX = function(translateX) {
+			tabNav.css('transform', 'translateX(' + translateX + 'px)');
+			tabNav.css('webkitTransform', 'translateX(' + translateX + 'px)');
+		}
+		var index = 0;
+		var pages = Math.ceil(tabNavList.length / 6);
+		/**
+		 * 下一页
+		 * */
+		$(".btn-rooms-next").on("click", function() {
+			//			debugger;
+			if(index < pages - 1) {
+				index++;
+				addTransition();
+				/*做位移*/
+				setTranslateX(-index * width);
+			}
+
+		})
+		/**
+		 * 上一页
+		 * */
+		$(".btn-rooms-prev").on("click", function() {
+			//		debugger;
+			if(index > 0) {
+				index--;
+				addTransition();
+				/*做位移*/
+				if(index >= 0) {
+					setTranslateX(-index * width);
+				}
+			}
+		})
+
+		var desks = document.getElementsByClassName("desks")[0]
+		if(desks.scrollHeight > desks.clientHeight) {
+			$(".btn-desks-prev").show();
+			$(".btn-desks-next").show();
+		}
+	</script>
+
+</html>

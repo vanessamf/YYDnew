@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>系统设置-商户信息</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-switch.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/systemSetting.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="tableList.html" class="back col-xs-1 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				系统设置
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="system-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="system-left col-md-2 col-sm-2 col-lg-2 no-padding">
+				<ul class="left-menu">
+					<li class="active">
+						<i class="iconfont icon-shanghurenzheng"></i> 商户信息
+					</li>
+					<li id="printSetting.html">
+						<i class="iconfont icon-dayin1"></i> 打印设置
+					</li>
+					<li id="monitoringSetting.html">
+						<i class="iconfont icon-jiankong1"></i> 厨房监控设置
+					</li>
+					<li id="funcSetting.html">
+						<i class="iconfont icon-rili3"></i> 功能设置
+					</li>
+					<li id="AccountSetting.html">
+						<i class="iconfont icon-wallet"></i> 账户管理
+					</li>
+					<li id="outerScreenSetting.html">
+						<i class="iconfont icon-computer"></i> 外屏设置
+					</li>
+					<li id="msgCenter.html">
+						<i class="iconfont icon-tubiao15"></i> 消息中心
+					</li>
+					<li id="pwdSettiing.html">
+						<i class="iconfont icon-jianpan3"></i> 修改密码
+					</li>
+				</ul>
+			</div>
+			<!--左边END-->
+
+			<!--右边-->
+			<div class="system-right col-md-10 col-sm-10 col-lg-10 no-padding">
+				<div class="right-content">
+					<ul class="shanghu-content">
+						<li>
+							<sapn>商户编号：</sapn>
+							<span>1307058</span>
+						</li>
+						<li>
+							<sapn>商户名称：</sapn>
+							<span>东吴面馆</span>
+						</li>
+						<li>
+							<sapn>联系电话：</sapn>
+							<span>13737122246</span>
+						</li>
+						<li>
+							<sapn>商户地址：</sapn>
+							<span>创意产业园富华科技大厦</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--左边END-->
+		</div>
+		<footer class="footer">
+			<div class="col-md-3 col-sm-4 col-xs-4">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="col-md-4 col-sm-5 col-xs-5">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			// 		$(".btn-warning").click(function(){
+			// 			window.location.href="payment.html";
+			// 		})
+		})
+	</script>
+
+</html>

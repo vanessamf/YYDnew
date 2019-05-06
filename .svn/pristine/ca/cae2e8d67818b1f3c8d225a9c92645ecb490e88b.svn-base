@@ -1,0 +1,39 @@
+/*分单*/
+.separateBills-wrapper{
+	height:calc(100% - 40px);
+	color:#000;
+}
+.separateBills-wrapper .bills-column{
+	height:100%;
+	border-right:1px solid #d2d2d2;
+}
+.separateBills-wrapper .bills-column:last-child{
+	border:none;
+}
+.bills-column .column-title{
+	padding-left:15px;
+	line-height: 40px;
+	height:40px;
+	background:#eee;
+}
+.bills-column .column-content{
+	height:calc(100% - 80px);
+}
+.bills-column .column-footer{
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	color:#f0ad4e;
+	border-top:1px solid #d2d2d2;
+}
+.separateBills-footer{
+	color:#000;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	border-top:1px solid #d2d2d2;
+}
+.separateBills-footer span{
+	background: #d5f1f4;
+	border-right:1px solid #d2d2d2;
+}

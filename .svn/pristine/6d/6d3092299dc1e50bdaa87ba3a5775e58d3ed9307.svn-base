@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>中餐首页</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="logo col-xs-2">
+				<img class="" src="../images/logo.png" alt="">
+			</div>
+			<div class="nav col-xs-10">
+				<span class="nav-item">预定</span>
+				<span class="nav-item">叫号</span>
+				<span class="nav-item">外接单</span>
+				<span class="nav-item">反结算</span>
+				<span class="nav-item">沽清</span>
+				<span class="nav-item">会员</span>
+				<span class="nav-item">更多功能</span>
+				<span class="nav-item btn-exit">
+					<i class="iconfont icon-shanjian01 large text-white"></i>
+				</span>
+			</div>
+		</header>
+		<div class="main-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边·桌台-->
+			<div class="desk-wrapper col-md-8 col-sm-8 col-lg-9 no-padding">
+				<!--分类选项卡-->
+				<div class="room-tab">
+					<ul class="nav nav-pills clearfloat">
+						<li class="tab-nav active">
+							<a href="#all" data-toggle="tab">全部</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#baoxiang" data-toggle="tab">包厢</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#yilou" data-toggle="tab">一楼大厅</a>
+						</li>
+						<li class="tab-nav">
+							<a href="#erlou" data-toggle="tab">二楼大厅</a>
+						</li>
+						<li class="tab-nav page-turn">
+							<a href="" class="arrow btn-rooms-prev">
+								<i class="iconfont icon-page-prev"></i>
+							</a>
+							<a href="" class="arrow btn-rooms-next">
+								<i class="iconfont icon-page-next"></i>
+							</a>
+						</li>
+					</ul>
+					<!--<div class="pull-right text-right" style="width:30%">
+						<i class="iconfont icon-iconset0433 text-white btn-rooms-prev h1"></i>
+						<i class="iconfont icon-iconset0434 text-white btn-rooms-next h1" style="margin-left: 10%"></i>
+					</div>-->
+				</div>
+				<!--桌台-->
+				<div class="tab-content">
+					<ul id="all" class="tab-pane active desks clearfloat">
+						<li class="desk-item guest reserve-btn col-sm-1-7">
+							<h3>A001</h3>
+							<p>￥88.00</p>
+							<p>1/4人</p>
+							<p>12:00(7分钟)</p>
+						</li>
+						<li class="desk-item active col-sm-1-7">A001</li>
+						<li class="desk-item col-sm-1-7">A002</li>
+						<li class="desk-item col-sm-1-7">A003</li>
+						<li class="desk-item col-sm-1-7">A004</li>
+						<li class="desk-item col-sm-1-7">A005</li>
+						<li class="desk-item col-sm-1-7">A006</li>
+						<li class="desk-item col-sm-1-7">A007</li>
+						<li class="desk-item col-sm-1-7">A008</li>
+						<li class="desk-item col-sm-1-7">A009</li>
+						<li class="desk-item col-sm-1-7">A010</li>
+						<li class="desk-item col-sm-1-7">A002</li>
+						<li class="desk-item col-sm-1-7">A003</li>
+						<li class="desk-item col-sm-1-7">A002</li>
+						<li class="desk-item col-sm-1-7">A003</li>
+						<li class="desk-item col-sm-1-7">A004</li>
+						<li class="desk-item col-sm-1-7">A005</li>
+						<li class="desk-item col-sm-1-7">A006</li>
+						<li class="desk-item col-sm-1-7">A007</li>
+						<li class="desk-item col-sm-1-7">A008</li>
+						<li class="desk-item col-sm-1-7">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+					</ul>
+					<ul id="baoxiang" class="tab-pane  desks clearfloat">
+						<li class="desk-item guest reserve-btn">
+							<h3>A001</h3>
+							<p>￥88.00</p>
+							<p>1/4人</p>
+							<p>12:00(7分钟)</p>
+						</li>
+						<li class="desk-item active">A001</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item">A004</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A004</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+					</ul>
+					<ul id="yilou" class="tab-pane desks clearfloat">
+						<li class="desk-item active">A001</li>
+						<li class="desk-item">A004</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+						<li class="desk-item">A004</li>
+						<li class="desk-item">A005</li>
+						<li class="desk-item">A006</li>
+						<li class="desk-item">A007</li>
+						<li class="desk-item">A008</li>
+						<li class="desk-item">A009</li>
+						<li class="desk-item">A010</li>
+						<li class="desk-item">A002</li>
+						<li class="desk-item">A003</li>
+					</ul>
+				</div>
+				<!--数量统计-->
+				<div class="desk-tips">
+					<div class="col-xs-10">
+						<div class="">
+							<span class="flex text-using"><i class="iconfont icon-yuandian"></i> 已点</span>
+							<span class="flex text-usedTime"><i class="iconfont icon-yuandian"></i> 0.3小时</span>
+							<span class="flex text-clear"><i class="iconfont icon-yuandian"></i> 正在清桌</span>
+						</div>
+						<div class="">
+							<span class="flex text-num">全部88桌</span>
+							<span class="flex text-num">已开3桌</span>
+							<span class="flex text-num">未开85桌</span>
+						</div>
+					</div>
+					<div class="">
+						<!--向上-->
+						<span class="">
+							<i class="iconfont icon-icon_shangyipian" ></i>
+						</span>
+						<!--向下-->
+						<span class="">
+							<i class="iconfont icon-icon_xiayipian"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!--右边-->
+			<div class="command-wrapper col-md-4 col-sm-4 col-lg-3 no-padding">
+				<div class="search-bar">
+					<div class="search-int"><input type="search"></div>
+					<span class="h5">用餐人数</span>
+				</div>
+				<div class="keyboard-container">
+					<div class="keyboard">
+						<span class="key">7</span>
+						<span class="key">8</span>
+						<span class="key">9</span>
+						<span class="key">4</span>
+						<span class="key">5</span>
+						<span class="key">6</span>
+						<span class="key">1</span>
+						<span class="key">2</span>
+						<span class="key">3</span>
+						<span class="key"><i class="iconfont icon-shanchu" style="font-size:40px"></i></span>
+						<span class="key">0</span>
+						<span class="key btn-clear">清除</span>
+					</div>
+					<div class="btn-wrapper">
+						<div class="menu">
+							<p class="key flex btn-order">开单</p>
+							<p class="key flex btn-lading-bill">提单</p>
+						</div>
+						<div class="menu btn-warning ">
+							<p class="btn-pay">付款</p>
+						</div>
+						<!--<div class="menu" style="border:solid 2px #3596ca;margin :-2px 0">-->
+						<!--<button type="button" class="menu btn btn-warning btn-pay">
+							付款
+						</button>-->
+						<!--</div>-->
+						<div class="menu">
+							<p class="key flex btn-split-table">分合桌</p>
+							<p class="key flex btn-change-desk">换桌</p>
+							<!--<p class="key flex">清桌</p>-->
+						</div>
+						<div class="menu" style="margin-top:-2px">
+							<p class="key flex">客用单</p>
+							<!--<p class="key flex">合单</p>-->
+							<p class="key flex">登出</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--右边END-->
+		</div>
+		<footer class="footer">
+			<div class="">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".btn-order").click(function() {
+				window.location.href = "menu.html";
+			})
+			$(".btn-pay").click(function() {
+				window.location.href = "payment.html";
+			})
+		})
+
+		$(document).ready(function() {
+			init();
+		});
+		var tabNavList = $(".tab-nav");
+		var pageTurn = $(".page-turn");
+
+		function init() {
+			var tH = $(".desk-item").outerWidth();
+			var c = "width:" + tH + "px;"
+			//			$(".tab-nav").attr("style", c);
+			$(".pull-right").attr("style", c);
+
+			var d = "width:" + tH * 6 + "px;"
+
+			//			if(tabNavList.length > 5) {
+			//				$(".tab-nav-wrapper").attr("style", d);
+			//				pageTurn.show();
+			//			} else {
+			//              pageTurn.hide();
+			//			}
+		}
+
+		var width = $(".desk-item").outerWidth() * 6;
+		var tabNavWrapper = $(".tab-nav-wrapper");
+		var tabNav = $(".tab-nav");
+		var addTransition = function() {
+			tabNav.css('transition', 'all 0.2s');
+			tabNav.css('webkitTransition', 'all 0.2s');
+		}
+		var setTranslateX = function(translateX) {
+			tabNav.css('transform', 'translateX(' + translateX + 'px)');
+			tabNav.css('webkitTransform', 'translateX(' + translateX + 'px)');
+		}
+		var index = 0;
+		var pages = Math.ceil(tabNavList.length / 6);
+		/**
+		 * 下一页
+		 * */
+		$(".btn-rooms-next").on("click", function() {
+			//			debugger;
+			if(index < pages - 1) {
+				index++;
+				addTransition();
+				/*做位移*/
+				setTranslateX(-index * width);
+			}
+
+		})
+		/**
+		 * 上一页
+		 * */
+		$(".btn-rooms-prev").on("click", function() {
+			//		debugger;
+			if(index > 0) {
+				index--;
+				addTransition();
+				/*做位移*/
+				if(index >= 0) {
+					setTranslateX(-index * width);
+				}
+			}
+		})
+
+		var desks = document.getElementsByClassName("desks")[0]
+		if(desks.scrollHeight > desks.clientHeight) {
+			$(".btn-desks-prev").show();
+			$(".btn-desks-next").show();
+		}
+	</script>
+
+</html>

@@ -1,0 +1,193 @@
+.check-wrapper {
+	/*padding: 7px 0 0 0;*/
+	height: calc(100% - 85px);
+	font-size: 16px;
+	background: #fff;
+}
+
+.check-list {
+	position: relative;
+	height: 100%;
+}
+
+.check-list .check-title {
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	font-size: 0;
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.check-list .check-title span {
+	font-size: 16px;
+	display: inline-block;
+	width: 10%;
+	text-align: center;
+	padding: 0 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.check-list .check-title span:nth-child(2),
+.check-list .check-title span:nth-child(3),
+.check-list .check-title span:nth-child(4) {
+	width: 20%;
+}
+
+.check-list .check-content {
+	position: relative;
+	height: calc(100% - 90px);
+}
+
+.check-list .check-content ul li {
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #c1c1c1;
+	font-size: 0;
+}
+
+.check-list .check-content ul li:active {
+	color: #fff;
+	background: #45d6d1;
+}
+
+.check-list .check-content ul li span {
+	display: inline-block;
+	width: 10%;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.check-list .check-content ul span:nth-child(2),
+.check-list .check-content ul span:nth-child(3),
+.check-list .check-content ul span:nth-child(4) {
+	width: 20%;
+}
+
+.check-list .check-content .check-pager {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+}
+
+.check-list .check-content .check-pager span {
+	display: inline-block;
+	margin-left: 25px;
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color: #646464;
+	border: 1px solid #bfbfbf;
+}
+
+.check-list .check-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.check-list .check-footer span {
+	border: 1px solid #bfbfbf;
+	border-right: none;
+}
+
+.check-list .check-footer span:last-child {
+	/*border-left:1px solid #bfbfbf;*/
+}
+
+.check-list .check-footer span:active {
+	color: #fff;
+	background: #45d6d1;
+}
+
+
+/*右边*/
+
+.check-detail-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0 15px;
+	border-left: 1px solid #bfbfbf;
+}
+
+.check-detail-wrapper .check-detail-content {
+	flex: 1;
+	overflow-y: auto;
+}
+
+.check-detail-wrapper .check-detail-title {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.check-detail-wrapper .check-detail-title p {
+	line-height: 50px;
+}
+
+.check-detail-wrapper .check-detail-title p.title {
+	text-align: center;
+	font-weight: 500;
+}
+
+.check-detail-wrapper .check-detail-count {
+	height: calc(100% - 101px);
+	overflow-y: auto;
+}
+
+.check-detail-wrapper .check-detail-count>ul {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.check-detail-wrapper .check-detail-count .check-detail-item div {
+	height:35px;
+	line-height: 35px;
+}
+
+.check-detail-wrapper .check-detail-count .check-detail-item span {
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.check-detail-wrapper .check-detail-count .check-detail-item .sub-item {
+	font-size: 14px;
+}
+
+.check-detail-wrapper .check-info-fee {
+	width: 100%;
+	/*flex:1;*/
+}
+
+.check-detail-wrapper .check-info-fee ul {
+	padding: 10px 0;
+	border-top: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.check-detail-wrapper .check-info-fee ul li {
+	display: flex;
+	justify-content: space-between;
+	line-height: 30px;
+}
+
+.check-detail-wrapper .check-info-fee .pay-sum {
+	padding: 15px 0;
+}
+
+.check-detail-wrapper .check-info-fee .pay-sum span {
+	display: block;
+	text-align: right;
+}

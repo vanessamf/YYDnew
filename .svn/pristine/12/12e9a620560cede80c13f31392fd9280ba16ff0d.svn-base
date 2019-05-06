@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>系统设置-厨房监控</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-switch.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/systemSetting.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="tableList.html" class="back col-xs-1 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				系统设置
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="system-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="system-left col-md-2 col-sm-2 col-lg-2 no-padding">
+				<ul class="left-menu">
+					<li id="shanghuSetting.html">
+						<i class="iconfont icon-shanghurenzheng"></i> 商户信息
+					</li>
+					<li id="printSetting.html">
+						<i class="iconfont icon-dayin1"></i> 打印设置
+					</li>
+					<li class="active">
+						<i class="iconfont icon-jiankong1"></i> 厨房监控设置
+					</li>
+					<li id="funcSetting.html">
+						<i class="iconfont icon-rili3"></i> 功能设置
+					</li>
+					<li id="AccountSetting.html">
+						<i class="iconfont icon-wallet"></i> 账户管理
+					</li>
+					<li id="outerScreenSetting.html">
+						<i class="iconfont icon-computer"></i> 外屏设置
+					</li>
+					<li id="msgCenter.html">
+						<i class="iconfont icon-tubiao15"></i> 消息中心
+					</li>
+					<li id="pwdSetting.html">
+						<i class="iconfont icon-jianpan3"></i> 修改密码
+					</li>
+					<li id="moreSetting.html">
+						<i class="iconfont icon-more"></i> 更多功能
+					</li>
+				</ul>
+			</div>
+			<!--左边END-->
+
+			<!--右边-->
+			<div class="system-right col-md-10 col-sm-10 col-lg-10 no-padding">
+				<div class="right-content">
+					<div class="monitoring-content">
+						<div class="checkbox">
+							<label>
+    								<input type="checkbox" value="">
+    								<span>打印机状态</span>
+  							</label>
+						</div>
+						<div class="content-wrapper">
+							<div class="print-bar">
+								<ul class="nav nav-pills clearfloat">
+									<li class="tab-nav col-sm-3 no-padding active">
+										<a href="#tab1" data-toggle="tab" aria-expanded="true">打印机</a>
+									</li>
+									<li class="tab-nav col-sm-3 no-padding">
+										<a href="#tab2" data-toggle="tab" aria-expanded="false">未对应打印机菜品</a>
+									</li>
+									<li class="tab-nav col-sm-3 no-padding">
+										<a href="#tab3" data-toggle="tab">菜品对应的打印机</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-content">
+								<div id="tab1" class="tab-pane active">
+									<div class="table">
+										<div class="table-thead">
+											<div class="monitoring-title table-tr">
+												<span class="table-th" style="width:10%">序号</span>
+												<span class="table-th" style="width:15%">打印机</span>
+												<span class="table-th" style="width:20%">地址</span>
+												<span class="table-th" style="width:15%">状态</span>
+												<span class="table-th" style="width:10%">待打印</span>
+												<span class="table-th" style="width:10%">打印中</span>
+												<span class="table-th" style="width:10%">已打印</span>
+												<span class="table-th" style="width:10%">打印失效</span>
+											</div>
+										</div>
+									</div>
+									<div class="monitoring-list-wrapper">
+										<div class="table">
+											<ul class="monitoring-list table-tbody">
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:10%">22</span>
+													<span class="table-td" style="width:15%">炒饭</span>
+													<span class="table-td" style="width:20%">192.168.4.89</span>
+													<span class="table-td" style="width:15%">未连接</span>
+													<span class="table-td" style="width:10%">0</span>
+													<span class="table-td" style="width:10%">3</span>
+													<span class="table-td" style="width:10%">2</span>
+													<span class="table-td" style="width:10%">0</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+								<!--未对应打印机菜品-->
+								<div id="tab2" class="tab-pane">
+									<div class="table">
+										<div class="table-thead">
+											<div class="monitoring-title table-tr">
+												<span class="table-th" style="width:33.3%">菜品编号</span>
+												<span class="table-th" style="width:33.3%">菜品名称</span>
+												<span class="table-th" style="width:33.3%">速查码</span>
+											</div>
+										</div>
+									</div>
+									<div class="monitoring-list-wrapper">
+										<div class="table">
+											<ul class="monitoring-list table-tbody">
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:33.3%">22</span>
+													<span class="table-td" style="width:33.3%">炒饭</span>
+													<span class="table-td" style="width:33.3%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:33.3%">22</span>
+													<span class="table-td" style="width:33.3%">炒饭</span>
+													<span class="table-td" style="width:33.3%">192.168.4.89</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--菜品对应的打印机-->
+								<div id="tab3" class="tab-pane">
+									<div class="table">
+										<div class="table-thead">
+											<div class="monitoring-title table-tr">
+												<span class="table-th" style="width:25%">序号</span>
+												<span class="table-th" style="width:25%">菜品</span>
+												<span class="table-th" style="width:25%">打印机</span>
+												<span class="table-th" style="width:25%">打印单据</span>
+											</div>
+										</div>
+									</div>
+									<div class="monitoring-list-wrapper">
+										<div class="table">
+											<ul class="monitoring-list table-tbody">
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+												<li class="table-tr monitoring-item">
+													<span class="table-td" style="width:25%">22</span>
+													<span class="table-td" style="width:25%">炒饭</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+													<span class="table-td" style="width:25%">192.168.4.89</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bottom-btn">
+								<span>打印测试页</span>
+								<span>分单打印</span>
+								<span>检测打印机</span>
+								<span>重打单据</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--左边END-->
+		</div>
+		<footer class="footer">
+			<div class="col-md-3 col-sm-4 col-xs-4">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="col-md-4 col-sm-5 col-xs-5">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.left-menu li').click(function(e) {
+				window.location.href = e.target.id;
+			})
+			var tableWidth = $(".monitoring-title").width();
+			$(".monitoring-list-wrapper").css({
+				"width": tableWidth
+			})
+			$(".monitoring-list-wrapper .table").css({
+				"width": tableWidth
+			})
+		})
+	</script>
+
+</html>

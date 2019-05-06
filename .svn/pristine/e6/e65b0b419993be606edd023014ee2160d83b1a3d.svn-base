@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<div>
+			<h2>YYDnew</h2>
+			<ul>
+				<li>
+					<a href="./page/login.html" target="_blank">登录</a>
+				</li>
+				<li>
+					<a href="./page/tableList.html" target="_blank">桌台</a>
+				</li>
+				<li>
+					<a href="./page/menu.html" target="_blank">点餐</a>
+				</li>
+				<li>
+					<a href="./page/payment.html" target="_blank">付款</a>
+				</li>
+				<li>
+					<a href="./page/waimai.html" target="_blank">外接单</a>
+				</li>
+				<li>
+					<a href="./page/orderInfo.html" target="_blank">已结账单</a>
+				</li>
+				<li>
+					<a href="./page/booking.html" target="_blank">预定</a>
+				</li>
+				<li>
+					<a href="./page/shanghuSetting.html" target="_blank">系统设置</a>
+				</li>
+				<li>
+					<a href="./page/estimate.html" target="_blank">沽清</a>
+				</li>
+				<li>
+					<a href="./page/separateBills.html" target="_blank">分单</a>
+				</li>
+				<li>
+					<a href="./page/padOrder.html" target="_blank">平板点餐</a>
+				</li>
+				<li>
+					<a href="./page/shopCart.html" target="_blank">平板点餐购物车</a>
+				</li>
+				<li>
+					<a href="./page/offlineCheck.html" target="_blank">本机离线对账单</a>
+				</li>
+				<li>
+					<a href="./page/dishSaleReport.html" target="_blank">菜品销售报表</a>
+				</li>
+				<li>
+					<a href="./page/cashierReport.html" target="_blank">收银员报表</a>
+				</li>
+				<li>
+					<a href="./page/registration.html" target="_blank">会员</a>
+				</li>
+				<li>
+					<a href="./allModal/modal.html" target="_blank">所有弹框</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

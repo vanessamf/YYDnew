@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>平板点餐</title>
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/style.css">-->
+		<link rel="stylesheet" href="../css/padOrder.css">
+	</head>
+
+	<body>
+		<!--头部-->
+		<header id="menu_header" class="header">
+		</header>
+		<!--主体-->
+		<div class="main-wrapper col-md-12 col-sm-12 no-padding middle-content pad-content">
+			<!-- 左边菜单 -->
+			<section class="left-menu scroll_content">
+				<ul>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+					<li>意式菜品 <i class="pull-right"><img src="../images/right-arraw.png" alt=""></i></li>
+				</ul>
+			</section>
+			<!-- 右边菜品 -->
+			<section class="right-menu">
+				<div class="shop-car">
+					<img src="../images/shop-car-icon.png" width="50" height="50" alt="">
+				</div>
+				<div class="search-bar col-md-12 col-sm-12">
+					<div class="col-md-6 col-sm-6 flex-between">
+						<div class="cate active">特色菜</div>
+						<div class="cate">新品菜</div>
+						<div class="cate">推荐菜</div>
+					</div>
+					<div class="col-md-6 col-sm-6 search-content flex-pad" style="justify-content: center;">
+						<div class="search-radius" style="width: auto">
+							<div class="flex-pad" style="width: calc(100% - 20px);">
+								<input type="search" placeholder="菜品">
+							</div>
+						</div>
+						<div class="search-btn">搜索</div>
+					</div>
+				</div>
+				<div class="food-content col-md-12 col-sm-12">
+					<div class="col-md-4 col-sm-4 food ">
+						<div class="img"><img src="../images/food1.png" alt=""></div>
+						<div class="food-details food-sale-out">
+							<div>香芹拌牛肉</div>
+							<div>
+								<div class="pull-left price">
+									￥38
+								</div>
+								<div class="pull-right num">
+									<span class="incre-btn red-btn">—</span> 1 <span class="incre-btn add-btn"><i class="iconfont icon-iconfontadd large"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 food ">
+						<div class="img"><img src="../images/food1.png" alt=""></div>
+						<div class="food-details ">
+							<div>香芹拌牛肉</div>
+							<div>
+								<div class="pull-left price">
+									￥38
+								</div>
+								<div class="pull-right num">
+									<span class="incre-btn red-btn">—</span> 1 <span class="incre-btn add-btn"><i class="iconfont icon-iconfontadd large"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 food ">
+						<div class="img"><img src="../images/food1.png" alt=""></div>
+						<div class="food-details ">
+							<div>香芹拌牛肉</div>
+							<div>
+								<div class="pull-left price">
+									￥38
+								</div>
+								<div class="pull-right num">
+									<span class="incre-btn red-btn">—</span> 1 <span class="incre-btn add-btn"><i class="iconfont icon-iconfontadd large"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 food ">
+						<div class="img"><img src="../images/food1.png" alt=""></div>
+						<div class="food-details ">
+							<div>香芹拌牛肉</div>
+							<div>
+								<div class="pull-left price">
+									￥38
+								</div>
+								<div class="pull-right num">
+									<span class="incre-btn red-btn">—</span> 1 <span class="incre-btn add-btn"><i class="iconfont icon-iconfontadd large"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 food ">
+						<div class="img"><img src="../images/food1.png" alt=""></div>
+						<div class="food-details ">
+							<div>香芹拌牛肉</div>
+							<div>
+								<div class="pull-left price">
+									￥38
+								</div>
+								<div class="pull-right num">
+									<span class="incre-btn red-btn">—</span> 1 <span class="incre-btn add-btn"><i class="iconfont icon-iconfontadd large"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 food ">
+						<div class="img"><img style="border: 1px solid #f6f6f6;" src="../images/no-food.png" alt=""></div>
+						<div class="food-details ">
+							<div>香芹拌牛肉</div>
+							<div>
+								<div class="pull-left price">
+									￥38
+								</div>
+								<div class="pull-right num">
+									<span class="incre-btn red-btn">—</span> 1 <span class="incre-btn add-btn"><i class="iconfont icon-iconfontadd large"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+		
+		<!--底部-->
+		<footer class="footer">
+			<div class="col-md-3 col-sm-4 col-xs-4">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="col-md-4 col-sm-5 col-xs-5">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+
+		<!--菜品详情-->
+		<aside class="msg-wrapper msg-food-detail">
+			<!--主体内容-->
+			<div class="msg-content webkit-vertical">
+				<div class="food  fs-22">
+					<div class="img"><img src="../images/food1.png" alt=""></div>
+					<div class="food-details">
+						<div>香芹拌牛肉</div>
+						<div>
+							<div class="pull-left price">
+								￥38
+							</div>
+							<div class="pull-right num">
+								<span class="incre-btn red-btn">—</span> 1 <span class="incre-btn add-btn"><i class="iconfont icon-iconfontadd large"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="cook-type fs-20">
+						<ul>
+							<li>加冰</li>
+							<li>加香菜</li>
+							<li class="active">红烧油焖</li>
+							<li>加冰</li>
+							<li>加冰</li>
+							<li>加冰</li>
+							<li>加冰</li>
+							<li>加冰</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--底部确定取消-->
+			<div class="msg-foot text-center">
+				<button class="btn btn-success">确认</button>
+				<button class="btn btn-default btn-close">取消</button>
+			</div>
+		</aside>
+
+		<!--蒙层-->
+		<div class="masker"></div>
+
+	</body>
+
+</html>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+<script>
+	$(document).ready(function() {
+		init();
+	});
+
+	function init() {
+		var h1 = $(".food-content").height();
+		var style = "height:" + (h1 / 2) + "px;"
+		$(".food-content .food").attr("style", style);
+		var height1 = h1 / 2 - 110;
+
+		var style1 = "height:" + height1 + "px;"
+		$(".food-content .food .img").attr("style", style1);
+	}
+	$(".food").on("click", function() {
+		$(".msg-food-detail").show();
+		$(".masker").show();
+	});
+
+	$(".btn-close").on("click", function() {
+		$(".msg-food-detail").hide();
+		$(".masker").hide()
+	});
+
+	$(".btn-order").on("click", function() {
+		window.location.href = "order.html"
+	});
+
+	// 返回 
+	$(".js_back_handler").on("click", function() {
+		window.history.go(-1)
+	})
+
+	//
+	$("#moreDishes").on('click', function() {
+		var $moreDish = $(".alldishes-wrap");
+		var $this = $(this);
+		$moreDish.toggleClass("on")
+	})
+</script>

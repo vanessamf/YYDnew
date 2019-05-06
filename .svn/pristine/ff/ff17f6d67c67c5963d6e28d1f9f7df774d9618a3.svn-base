@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>充值</title>
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-switch.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link href="../js/select2/select2.css" rel="stylesheet" />
+		<link href="../js/select2/theme.css" rel="stylesheet" cache="false" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/memberSetting.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="tableList.html" class="back col-sm-1 no-padding">
+				<i class="iconfont icon-fanhui"></i> 返回
+			</a>
+			<div>
+				充值
+			</div>
+			<span class="btn-exit">
+				<i class="iconfont icon-shanjian01 large text-white"></i>
+			</span>
+		</header>
+		<div class="member-wrapper col-md-12 col-sm-12 no-padding middle-content">
+			<!--左边-->
+			<div class="member-left col-md-2 col-sm-2 col-lg-2 no-padding">
+				<ul class="left-menu">
+					<li id="registration.html">
+						注册
+					</li>
+					<li class="active">
+						查询
+					</li>
+					<li id="recharge.html">
+						充值
+					</li>
+				</ul>
+			</div>
+			<!--左边END-->
+
+			<!--右边-->
+			<div class="member-right col-md-10 col-sm-10 col-lg-10 no-padding">
+				<div class="right-content">
+					<div class="registration-content">
+						<form id="f_store_info" class="form-horizontal clearfloat">
+							<div class="form-container col-sm-6">
+								<div class="form-group">
+									<label for="" class="col-sm-3 no-padding control-label">会员姓名：</label>
+									<div class="col-sm-8 no-padding">
+										<input type="text" name="usr-name" class="form-control ivalidate-box ivalidate-normal" data-validate-options="required: true" data-ref="ivtip-0">
+									</div>
+								</div>
+								<div class="form-group col-sm-24">
+									<label for="inputPassword3" class="col-sm-3  no-padding control-label">性别：</label>
+									<div id="radio-group" class="col-sm-8 no-padding">
+										<label class="radio-inline">
+											男
+	       									<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+        									</label>
+										<label class="radio-inline">
+											女
+	        									<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" checked="checked">
+         								</label>
+										<label class="radio-inline">
+											保密
+	        									<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" checked="checked">
+         								</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 no-padding control-label">手机号：</label>
+									<div class="col-sm-8 no-padding">
+										<input type="text" name="usr-name" class="form-control ivalidate-box ivalidate-normal" data-validate-options="required: true" data-ref="ivtip-0">
+									</div>
+									<i class="col-sm-1 no-padding required">*</i>
+								</div>
+								<div class="form-group calendar-wrapper">
+									<label for="" class="col-sm-3 no-padding control-label">会员生日：</label>
+									<div class="validity-date  date col-sm-8  no-padding" id="datetimepicker" data-date="" data-date-format="dd-mm-yyyy">
+										<input class="span2 form-control" type="datetime" value="" readonly="readonly">
+										<span class="add-on"><i class="icon-th iconfont icon-rili1"></i></span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 no-padding control-label">会员类型：</label>
+									<div class="col-sm-8 no-padding">
+										<select id="type_membership" class="sel2-control">
+											<!-- placeholder 占位-->
+											<option value=""></option>
+											<option value="1">白金卡</option>
+											<option value="2">金卡</option>
+											<option value="3">银卡</option>
+
+										</select>
+									</div>
+									<i class="col-sm-1 no-padding required">*</i>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 no-padding control-label">会员卡号：</label>
+									<div class="col-sm-8 no-padding">
+										<input type="text" name="usr-name" class="form-control ivalidate-box ivalidate-normal" data-validate-options="required: true" data-ref="ivtip-0">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 no-padding control-label">开卡人：</label>
+									<div class="col-sm-8 no-padding">
+										<input type="text" name="usr-name" class="form-control ivalidate-box ivalidate-normal" data-validate-options="required: true" data-ref="ivtip-0">
+									</div>
+								</div>
+							</div>
+							<div class=" col-sm-6">
+								<div class="registration-keyboard">
+									<span class="key">1</span>
+									<span class="key">2</span>
+									<span class="key">3</span>
+									<span class="key">4</span>
+									<span class="key">5</span>
+									<span class="key">6</span>
+									<span class="key">7</span>
+									<span class="key">8</span>
+									<span class="key">9</span>
+									<span class="key">0</span>
+									<span class="key">.</span>
+									<span class="key btn-clear">删除</span>
+								</div>
+								<div class="confirm-apply-account openCard" data-toggle="modal" data-target="#openCardModal">开卡</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--右边END-->
+		</div>
+		<footer class="footer">
+			<div class="col-md-3 col-sm-4 col-sm-4">
+				<span>员工：乐乐</span>
+				<span>东吴面馆风津南路店</span>
+			</div>
+			<div class="col-md-4 col-sm-5 col-sm-5">
+				<span><i class="iconfont icon-yun1"></i>&nbsp;云连接</span>
+				<span><i class="iconfont icon-dayin1"></i>&nbsp;厨打</span>
+				<span><i class="iconfont icon-dianhua"></i>&nbsp;0512-62626244</span>
+			</div>
+			<div class="">
+				<span>2018/6/12&nbsp;&nbsp;12:00&nbsp;&nbsp;星期五</span>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.fr.js"></script>
+	<script src="../js/select2/select2.js"></script>
+	<script src="../js/select2/select2_zh-CN.js"></script>
+	<script type="text/javascript" src="../js/dialog.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.left-menu li').click(function(e) {
+				window.location.href = e.target.id;
+			})
+		})
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			promptDialog2("openCardModal", "提示", "发卡成功，是否前往充值页面？", "是", "否", "300px");
+		});
+		(function($) {
+			$('.sel2-control').select2({
+				placeholder: "请选择",
+				minimumResultsForSearch: -1,
+				allowClear: true
+			})
+		})(jQuery);
+		(function($) {
+			$(".date").datetimepicker({
+				language: "zh-CN",
+				format: 'yyyy-mm-dd',
+				autoclose: true,
+				startView: 2,
+				minView: 2,
+				pickerPosition: 'bottom-left',
+				minuteStep: 5,
+			});
+		})(jQuery)
+	</script>
+</html>
